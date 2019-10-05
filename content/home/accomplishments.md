@@ -20,7 +20,7 @@ date_format = "Jan 2006"
 
 [[item]]
   organization = "China’s Ministry of Education"
-  organization_url = ""
+  organization_url = "http://www.moe.gov.cn"
   title = "National Scholarship (for top 0.2% undergrad.)"
   url = ""
   certificate_url = ""
@@ -30,8 +30,8 @@ date_format = "Jan 2006"
 
 [[item]]
   organization = "China’s Ministry of Education"
-  organization_url = ""
-  title = "National Scholarship (for top 0.2% undergrad.)"
+  organization_url = "http://www.moe.gov.cn"
+  title = "National Scholarship (for top 0.2% undergraduate students)"
   url = ""
   certificate_url = ""
   date_start = "2017-09-01"
@@ -40,7 +40,7 @@ date_format = "Jan 2006"
 
 [[item]]
   organization = "Tongji University"
-  organization_url = ""
+  organization_url = "www.tongji.edu.cn"
   title = "First Class Student Scholarship"
   url = ""
   certificate_url = ""
@@ -61,13 +61,22 @@ date_format = "Jan 2006"
 [[item]]
   organization = "Shanghai Ministry of Education, etc"
   organization_url = "https://www.comap.com/undergraduate/contests/mcm/"
-  title = "16th 'Challenge Cup' Shanghai College Student Curricular Academic Science and Technology Works Competition, Special Prize"
+  title = "Special Prize in 16th 'Challenge Cup' Shanghai College Student Curricular Academic Science and Technology Works Competition"
   url = ""
   certificate_url = ""
   date_start = "2019-06-01"
   date_end = ""
   description = ""
 
+[[item]]
+  organization = "Chinese Physical Society"
+  organization_url = "http://www.cps-net.org.cn/Index.htm"
+  title = "First Prize in 33rd China College Students Physics Contest, Shanghai"
+  url = ""
+  certificate_url = ""
+  date_start = "2016-12-01"
+  date_end = ""
+  description = ""
 
 
 +++
