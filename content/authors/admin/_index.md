@@ -24,6 +24,7 @@ interests:
 - Deep Learning
 - Computer Vision
 - Explainable AI
+- Weakly/Un-Supervised Learning
 
 education:
   courses:
