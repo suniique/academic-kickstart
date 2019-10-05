@@ -1,12 +1,11 @@
 ---
-title: "Leveraging Crowdsourced GPS Data for Road Extraction From Aerial Imagery"
+title: "Stacked U-Nets with Multi-output for Road Extraction"
 authors:
 - admin
-- Zonglin Di
-- Pengyu Che
-- Chun Liu
+- Zehui Chen
+- Wenxiang Wen
 - Yin Wang
-date: "2019-06-16T00:00:00Z"
+date: "2018-06-16T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -19,13 +18,13 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: In Procedings of *The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2019*
-publication_short: In *CVPR*
+publication: In Procedings of *2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW) 2018*
+publication_short: In *DeepGlobe*
 
-abstract: Deep learning is revolutionizing the mapping industry. Under lightweight human curation, computer has generated almost half of the roads in Thailand on Open- StreetMap (OSM) using high resolution aerial imagery. Bing maps are displaying 125 million computer generated building polygons in the U.S. While tremendously more efficient than manual mapping, one cannot map out everything from the air. Especially for roads, a small prediction gap by image occlusion renders the entire road useless for routing. Misconnections can be more dangerous. Therefore computer-based mapping often requires local verifications, which is still labor intensive. In this paper, we propose to leverage crowdsourced GPS data to improve and support road extraction from aerial imagery. Through novel data augmentation, GPS rendering, and 1D transpose convolution techniques, we show almost 5% improvements over previous competition winning models, and much better robustness when predicting new areas without any new training data or domain adaptation.
+abstract: With the recent advances of Convolutional Neural Networks(CNN) in computer vision, there have been rapid progresses in extracting roads and other features from satellite imagery for mapping and other purposes. In this paper, we propose a new method for road extraction using stacked U-Nets with multiple output. A hybrid loss function is used to address the problem of unbalanced classes of training data. Post-processing methods, including road map vectorization and shortest path search with hierarchical thresholds, help improve recall. The overall improvement of mean IoU compared to the vanilla VGG network is more than 20%.
 
 # Summary. An optional shortened abstract.
-summary: Leveraging crowdsourced GPS data to improve and support road extraction from aerial imagery.
+summary: A new method for road extraction using stacked U-Nets with multiple output, hybrid loss function used to address the problem of unbalanced classes of training data, and post-processing methods to bridge prediction gaps.
 
 tags:
 - Computer Vision
@@ -33,11 +32,7 @@ tags:
 featured: true
 
 links:
-- name: Supp
-  url: http://openaccess.thecvf.com/content_CVPR_2019/supplemental/Sun_Leveraging_Crowdsourced_GPS_CVPR_2019_supplemental.pdf
-url_pdf: http://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Leveraging_Crowdsourced_GPS_Data_for_Road_Extraction_From_Aerial_Imagery_CVPR_2019_paper.pdf
-url_code: https://github.com/suniique/Leveraging-Crowdsourced-GPS-Data-for-Road-Extraction-from-Aerial-Imagery
-url_poster: 'cvpr19_poster_sun.pdf'
+url_pdf: http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w4/Sun_Stacked_U-Nets_With_CVPR_2018_paper.pdf
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
