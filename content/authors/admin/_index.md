@@ -63,4 +63,6 @@ user_groups:
 
 Tao Sun is currently pursuing his Bachelor's degree of Software Engineering at Tongji University, Shanghai, China. He have been closely working with [Prof. Yin Wang](http://web.eecs.umich.edu/~yinw/) of the Deep Learning Lab of Tongji University for nearly two years, and with Research Scientist Dr. Saikat Basu of Facebook Maps Team of Facebook Inc. for half a year. As results, he have published 3 papers as the first author, including CVPR 2019, CVPRW 2018, ACM SIGSPATIAL Workshop 2018. 
 
-His current research interests mainly lie in the fields of computer vision, machine learning, and explainable AI.
+His current research interests mainly lie in the fields of computer vision, machine learning, and explainable AI. 
+
+For more information, please see the [CV (PDF)](files/CV_suntao.pdf).
