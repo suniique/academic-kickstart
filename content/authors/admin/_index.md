@@ -28,7 +28,7 @@ interests:
 education:
   courses:
   - course: "B.Eng. in Software Engineering"
-    institution: Tongji University
+    institution: School of Software Engineering, Tongji University
     year: "2016 - 2020 exp. (GPA: 4.82 / 5.0, Ranking: 2 / 185)"
 
 # Social/Academic Networking
