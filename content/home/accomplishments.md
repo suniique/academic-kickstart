@@ -61,8 +61,7 @@ date_format = "Jan 2006"
 [[item]]
   organization = "Shanghai Ministry of Education, etc"
   organization_url = "https://www.comap.com/undergraduate/contests/mcm/"
-  title = "16th 'Challenge Cup' Shanghai College Student Curricular Academic Science and Technology Works
-Competition, Special Prize"
+  title = "16th 'Challenge Cup' Shanghai College Student Curricular Academic Science and Technology Works Competition, Special Prize"
   url = ""
   certificate_url = ""
   date_start = "2019-06-01"
