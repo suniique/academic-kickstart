@@ -18,7 +18,7 @@ publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
 publication: In Procedings of *the 2nd ACM SIGSPATIAL International Workshop on AI for Geographic Knowledge Discovery*
-publication_short: In *GeoAI'18*
+publication_short: In *ACM SIGSPATIAL Workshop 2018 (GeoAI)*
 
 abstract: Road extraction is a fundamental problem in remote sensing and mapping. Recent advances in Convolution Neural Network (CNN) have contributed significant improvements in automatic road extraction from satellite imagery, albeit prediction gaps challenge post-processing. Some of the gaps are hard to bridge by satellite imagery alone due to dense vegetation, road construction, and building shadows. In this paper, we combine satellite imagery with GPS data to improve road extraction quality. Our dataset includes 100cm pixel resolution satellite imagery and 192-hour taxi GPS traces from the urban area of Beijing. Experimenting with various layers to combine GPS data, our CNN model outperforms the RGB-only model by nearly 13% on mean IoU.
 
