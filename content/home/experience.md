@@ -24,7 +24,7 @@ date_format = "Jan 2006"
   location = "Remotely working"
   date_start = "2019-02-01"
   date_end = ""
-  description = "Working with Dr. Saikat Basu and Dr. Guan Pang on the project of Topological-Aware Loss Function for Detecting Linear Structures from Image."
+  description = "Working with Dr. Saikat Basu and Dr. Guan Pang on the project of Topological-Aware Loss Function for Detecting Linear Structures from Image. I am going to submit our results to CVPR 2020."
 
 [[experience]]
   title = "Undergraduate Research Student"
@@ -33,7 +33,7 @@ date_format = "Jan 2006"
   location = "Shanghai, China"
   date_start = "2018-03-01"
   date_end = "2019-09-01"
-  description = "Working with Prof. Yin Wang on the project of Road Extraction from Satellite Imagery using GPS Trajectories and Satellite Imagery"
+  description = "Working with Prof. Yin Wang on the project of Road Extraction from Satellite Imagery using GPS Trajectories and Satellite Imagery. I have published 3 papers as first author at the Lab."
   
 [[experience]]
   title = "Undergraduate Research Student"
@@ -42,6 +42,6 @@ date_format = "Jan 2006"
   location = "Shanghai, China"
   date_start = "2018-09-01"
   date_end = "2018-12-01"
-  description = "Working with Prof. Qingfeng Du and Dr. Qiu Juan on the project of Combining LSTM with VAE for Anomaly Detection from Imbalanced KPI Data of Online Servers."
+  description = "Working with Prof. Qingfeng Du and Dr. Qiu Juan on the project of Combining LSTM with VAE for Anomaly Detection from Imbalanced KPI Data of Online Servers. We have applied for 1 Chinese Patent."
 
 +++
