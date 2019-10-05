@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Sun Tao
+name: Tao Sun
 
 # Username (this should match the folder name)
 authors:
