@@ -29,7 +29,7 @@ education:
   courses:
   - course: "B.Eng. in Software Engineering"
     institution: Tongji University
-    year: "2016 - 2020. (GPA: 4.82 / 5.0, Ranking: 2 / 185)"
+    year: "2016 - 2020 Exp. (GPA: **4.82 / 5.0**, Ranking: **2 / 185**)"
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -61,7 +61,7 @@ user_groups:
 - Visitors
 ---
 
-Tao Sun is currently pursuing his Bachelor's degree of Software Engineering at Tongji University, Shanghai, China. He have been closely working with [Prof. Yin Wang](http://web.eecs.umich.edu/~yinw/) of the Deep Learning Lab of Tongji University for nearly two years, and with Research Scientist Dr. Saikat Basu of Facebook Maps Team of Facebook Inc. for half a year. As results, he have published 3 papers as the first author, including CVPR 2019, CVPRW 2018, ACM SIGSPATIAL Workshop 2018. 
+Tao Sun is currently pursuing his Bachelor's Degree of Software Engineering at [Tongji University](www.tongji.edu.cn), Shanghai, China. He have been closely working with [Prof. Yin Wang](http://web.eecs.umich.edu/~yinw/) of the Deep Learning Lab of Tongji University for nearly two years, and with Research Scientist [Dr. Saikat Basu](http://www.csc.lsu.edu/~saikat/) of [Facebook Maps](https://ai.facebook.com/research/) of Facebook Inc. for half a year. As results, he have published 3 papers as the first author, including CVPR 2019, CVPRW 2018, ACM SIGSPATIAL Workshop 2018. 
 
 His current research interests mainly lie in the fields of computer vision, machine learning, and explainable AI. 
 
