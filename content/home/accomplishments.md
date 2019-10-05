@@ -2,7 +2,7 @@
 # Accomplishments widget.
 widget = "accomplishments"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
+active = false  # Activate this widget? true/false
 weight = 70  # Order that this section will appear.
 
 title = "Awards"
@@ -22,8 +22,10 @@ date_format = "Jan 2006"
   organization = "China’s Ministry of Education"
   organization_url = ""
   title = "National Scholarship"
-  date_start = "2018 Fall"
-  date_end = "2019 Spring"
+  url = ""
+  certificate_url = ""
+  date_start = "2018"
+  date_end = "2019"
   description = "For top 0.2% undergraduate students nationwide."
 
 
