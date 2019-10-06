@@ -23,14 +23,18 @@ subtitle = ""
  css_class = ""
 +++
 
-** Language **
+**Language**
+
 - Proficient: Python, C, C++
+
 - Intermediate: JavaScript, Java, Swift, SQL, MATLAB
 
-** Research **
+**Research**
 - Deep Learning: PyTorch, Keras, TensorFlow, Pandas, Sk-Learn, OpenCV
+
 - Academic Writing: LaTeX
 
-** Developing **
+**Developing**
 - Software: Xcode (iOS), Visual Studio (Win)
+
 - Database: MySQL, MongoDB, Neo4j, Spark
