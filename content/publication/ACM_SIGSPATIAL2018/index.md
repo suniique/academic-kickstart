@@ -31,6 +31,8 @@ tags:
 featured: true
 
 links:
+- name: Slides
+  url: 'GeoAI 2018.pdf'
 - name: Link
   url: https://dl.acm.org/citation.cfm?id=3281550
 url_pdf: 'SIGSPATIAL_Workshop_2018_Combining_Satellite Imagery_and_GPS_Data_for_Road_Extraction_paper.pdf'
