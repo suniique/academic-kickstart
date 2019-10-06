@@ -32,7 +32,9 @@ tags:
 featured: true
 
 links:
+url_poster: 'cvpr18_poster_suntao.pdf'
 url_pdf: http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w4/Sun_Stacked_U-Nets_With_CVPR_2018_paper.pdf
+
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
