@@ -24,7 +24,7 @@ interests:
 - Deep Learning
 - Computer Vision
 - Image Recognition
-- Explainable AI
+- Self-Driving
 - Weakly/Un-Supervised Learning
 
 education:
