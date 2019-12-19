@@ -39,9 +39,9 @@ links:
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  # caption: 'Satellite image with GPS trajectories'
-  # focal_point: ""
-  # preview_only: false
+  caption: 'Regional Variance Loss'
+  focal_point: ""
+  preview_only: false
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
