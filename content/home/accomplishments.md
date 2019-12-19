@@ -60,13 +60,23 @@ date_format = "Jan 2006"
 
 [[item]]
   organization = "Shanghai Ministry of Education, etc"
-  organization_url = "https://www.comap.com/undergraduate/contests/mcm/"
+  organization_url = “”
   title = "Special Prize in 2019 'Challenge Cup' Shanghai College Student Curricular Academic Science and Technology Works Competition"
-  url = ""
+  url = "http://2019.tiaozhanbei.net/"
   certificate_url = ""
   date_start = "2019-06-01"
   date_end = ""
-  description = ""
+  description = ‘2019“挑战杯”全国大学生课外学术科技作品竞赛’
+
+[[item]]
+  organization = "China Ministry of Education, etc"
+  organization_url = ""
+  title = "Second Prize in 2019 'Challenge Cup' National College Student Curricular Academic Science and Technology Works Competition"
+  url = "http://2019.tiaozhanbei.net/"
+  certificate_url = ""
+  date_start = "2019-11-10"
+  date_end = ""
+  description = ‘2019“挑战杯”全国大学生课外学术科技作品竞赛’
 
 [[item]]
   organization = "Chinese Physical Society"
