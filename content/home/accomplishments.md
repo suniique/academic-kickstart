@@ -60,7 +60,7 @@ date_format = "Jan 2006"
 
 [[item]]
   organization = "Shanghai Ministry of Education, etc"
-  organization_url = “”
+  organization_url = ""
   title = "Special Prize in 2019 'Challenge Cup' Shanghai College Student Curricular Academic Science and Technology Works Competition"
   url = "http://2019.tiaozhanbei.net/"
   certificate_url = ""
