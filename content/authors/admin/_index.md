@@ -23,7 +23,7 @@ bio:
 interests:
 - Image Recognition (Classification, Detection, Segmentation)
 - Structure-Aware CV
-- Semi- / Un-Supervised Learning
+- Semi-/Un-Supervised Learning
 - 3D and Point-Cloud Problems
 
 education:
