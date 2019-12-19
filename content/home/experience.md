@@ -19,12 +19,12 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
   title = "Research Intern"
-  company = "Facebook Maps Team of Facebook Inc."
+  company = "Facebook Research"
   company_url = ""
   location = "Remotely working"
   date_start = "2019-02-01"
   date_end = ""
-  description = "Working with Dr. Saikat Basu and Dr. Guan Pang on the project of Topological-Aware Loss Function for Detecting Linear Structures from Image. I am going to submit our results to CVPR 2020."
+  description = "Working with Dr. Saikat Basu and Dr. Guan Pang on the project of Topological-Aware Loss Function for Detecting Linear Structures from Image. I have submitted our results to CVPR 2020, as the first author."
 
 [[experience]]
   title = "Undergraduate Research Student"
