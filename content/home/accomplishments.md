@@ -66,7 +66,7 @@ date_format = "Jan 2006"
   certificate_url = ""
   date_start = "2019-06-01"
   date_end = ""
-  description = ‘2019“挑战杯”全国大学生课外学术科技作品竞赛’
+  description = "2019“挑战杯”全国大学生课外学术科技作品竞赛"
 
 [[item]]
   organization = "China Ministry of Education, etc"
@@ -76,7 +76,7 @@ date_format = "Jan 2006"
   certificate_url = ""
   date_start = "2019-11-10"
   date_end = ""
-  description = ‘2019“挑战杯”全国大学生课外学术科技作品竞赛’
+  description = "2019“挑战杯”全国大学生课外学术科技作品竞赛"
 
 [[item]]
   organization = "Chinese Physical Society"
