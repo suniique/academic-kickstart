@@ -1,41 +1,41 @@
 ---
-title: "Stacked U-Nets with Multi-output for Road Extraction"
+title: "Whole-Object Segmentation Using Regional Variance Losses"
 authors:
 - admin
-- Zehui Chen
-- Wenxiang Wen
-- Yin Wang
-date: "2018-06-16T00:00:00Z"
+date: "2019-11-15T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2018-06-16T00:00:00Z"
+publishDate: "2019-11-15T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["1"]
+publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: In Procedings of *2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW) 2018*
-publication_short: In *CVPR Workshop 2018 (DeepGlobe)*
+publication: Submitted (Under review)
+publication_short: Submitted (Under review)
 
-abstract: With the recent advances of Convolutional Neural Networks(CNN) in computer vision, there have been rapid progresses in extracting roads and other features from satellite imagery for mapping and other purposes. In this paper, we propose a new method for road extraction using stacked U-Nets with multiple output. A hybrid loss function is used to address the problem of unbalanced classes of training data. Post-processing methods, including road map vectorization and shortest path search with hierarchical thresholds, help improve recall. The overall improvement of mean IoU compared to the vanilla VGG network is more than 20%.
+abstract: Learning structured predictions in semantic segmentation receives increasing attention in recent years. Most semantic segmentation methods focus on common object datasets such as VOC and COCO, which label only visible parts of each object, e.g., sections of a horse separated by objects in front of it. Domain-specific objects, on the other hand, often require whole-object segmentation despite image occlusion, e.g., roads and buildings in satellite imagery under vegetation cover, cells, and organs in noisy medical images, lanes, and signs in autonomous driving applications. The widely used cross entropy loss doesn't work well in these cases, because its pixel-level independence assumption ignores topology and often leads to structural issues such as fragments and broken boundaries. To tackle this, we propose a simple but novel loss term that produces a much more continuous and smooth prediction for whole-object segmentation. Experiments on various tasks show that other structured approaches often perform worse than baseline for whole-object segmentation, while our loss shows significant topological improvements yet preserving the pixel-level metrics.
 
 # Summary. An optional shortened abstract.
-summary: A new method for road extraction using stacked U-Nets with multiple output, hybrid loss function used to address the problem of unbalanced classes of training data, and post-processing methods to bridge prediction gaps.
+summary: Reducing the over-segmented fragments and gaps in "whole-object" segmentation by regulating the local variance. 
 
 tags:
 - Computer Vision
-- Road Extraction
+- Structure-Aware
+- Loss Function
 featured: true
 
 links:
-url_poster: 'cvpr18_poster_suntao.pdf'
-url_pdf: http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w4/Sun_Stacked_U-Nets_With_CVPR_2018_paper.pdf
-
-
+# - name: Slides
+#   url: 'GeoAI 2018.pdf'
+# - name: Link
+#   url: https://dl.acm.org/citation.cfm?id=3281550
+# url_pdf: 'SIGSPATIAL_Workshop_2018_Combining_Satellite Imagery_and_GPS_Data_for_Road_Extraction_paper.pdf'
+ 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
