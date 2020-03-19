@@ -1,8 +1,8 @@
 ---
-title: "Whole-Object Segmentation Using Regional Variance Losses"
+title: "Unsupervised View Adaptive Re-Identification using Minimax Entropy"
 authors:
 - admin
-date: "2019-11-15T00:00:00Z"
+date: "2020-01-15T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
