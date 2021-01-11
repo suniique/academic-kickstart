@@ -15,7 +15,7 @@ role: M.Sc. in Computer Science
 # Organizations/Affiliations
 organizations:
 - name: ETH Zürich 
-  url: "ethz.ch"
+  url: "htps://ethz.ch"
 
 # Short bio (displayed in user profile at end of posts)
 bio: 
@@ -65,6 +65,8 @@ user_groups:
 - Visitors
 ---
 
-**Tao Sun** *(in Chinese: 孙韬)* is currently pursuing his Master's Degree of Computer Science at [ETH Zurich](https://inf.ethz.ch/), Switzerland. Prior to that, he has graduated from [Tongji University](www.tongji.edu.cn), Shanghai, China, with the Bachelor's Degree of Software Engineering. He has been closely working with [Prof. Yin Wang](http://web.eecs.umich.edu/~yinw/) of the [Deep Learning Lab](https://see.tongji.edu.cn/info/1153/6621.htm) of Tongji University for nearly two years, and with Research Scientist [Dr. Saikat Basu](http://www.csc.lsu.edu/~saikat/) and [Dr. Guan Pang](https://research.fb.com/people/pang-guan/) of [Facebook Research](https://research.fb.com/) for nine months on the research of Computer Vision. He has published 3 papers as the first author, including CVPR 2019, CVPRW 2018, ACM SIGSPATIAL Workshop 2018. 
+**Tao Sun** is currently pursuing his Master's Degree of Computer Science at [ETH Zurich](https://inf.ethz.ch/), Switzerland. 
+
+Prior to that, he has graduated from [Tongji University](https://www.tongji.edu.cn), Shanghai, China, with the Bachelor's Degree of Software Engineering. He has been closely working with [Prof. Yin Wang](http://web.eecs.umich.edu/~yinw/) of the [Deep Learning Lab](https://see.tongji.edu.cn/info/1153/6621.htm) of Tongji University for nearly two years, and with Research Scientist [Dr. Saikat Basu](http://www.csc.lsu.edu/~saikat/) and [Dr. Guan Pang](https://research.fb.com/people/pang-guan/) of [Facebook Research](https://research.fb.com/) for nine months on the research of Computer Vision. He has published 3 papers as the first author, including CVPR 2019, CVPRW 2018, ACM SIGSPATIAL Workshop 2018. 
 
 Currently, he is working on semi-supervised learning of image segmentation, and structure-aware image recognition. His research interests mainly lie in the fields of the intersection of Deep Learning and Computer Vision. For more information, please see the [CV (PDF)](files/CV_suntao.pdf).
