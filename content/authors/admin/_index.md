@@ -15,7 +15,7 @@ role: M.Sc. in Computer Science
 # Organizations/Affiliations
 organizations:
 - name: ETH Zürich 
-  url: "www.tongji.edu.cn"
+  url: "ethz.ch"
 
 # Short bio (displayed in user profile at end of posts)
 bio: 
@@ -30,7 +30,7 @@ education:
   courses:
   - course: "M.Sc. in Computer Science"
     institution: D-INFK, ETH Zürich, Switzerland
-    year: "2020 - Now"  
+    year: "2020 - Now"
   - course: "B.Eng. in Software Engineering"
     institution: School of Software Engineering, Tongji University, Shanghai
     year: "2016 - 2020 (GPA: 4.83 / 5.0,  Ranking: 2 / 179)"
@@ -56,7 +56,7 @@ social:
   link: files/CV_suntao.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "suntao@tongji.edu.cn", "taosun47@student.ethz.ch"
+email: "taosun47@student.ethz.ch"
   
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
