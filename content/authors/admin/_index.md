@@ -10,11 +10,11 @@ authors:
 superuser: true
 
 # Role/position
-role: B.Eng. in Software Engineering
+role: M.Sc. in Computer Science
 
 # Organizations/Affiliations
 organizations:
-- name: Tongji University
+- name: ETH Zürich 
   url: "www.tongji.edu.cn"
 
 # Short bio (displayed in user profile at end of posts)
@@ -28,9 +28,12 @@ interests:
 
 education:
   courses:
+  - course: "M.Sc. in Computer Science"
+    institution: D-INFK, ETH Zürich, Switzerland
+    year: "2020 - Now"  
   - course: "B.Eng. in Software Engineering"
-    institution: School of Software Engineering, Tongji University
-    year: "2016 - 2020 exp. (GPA: 4.82 / 5.0 or 93 / 100,  Ranking: 2 / 179)"
+    institution: School of Software Engineering, Tongji University, Shanghai
+    year: "2016 - 2020 (GPA: 4.83 / 5.0,  Ranking: 2 / 179)"
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -53,7 +56,7 @@ social:
   link: files/CV_suntao.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "suntao@tongji.edu.cn"
+email: "suntao@tongji.edu.cn", "taosun47@student.ethz.ch"
   
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
@@ -62,6 +65,6 @@ user_groups:
 - Visitors
 ---
 
-**Tao Sun** *(in Chinese: 孙韬)* is currently pursuing his Bachelor's Degree of Software Engineering at [Tongji University](www.tongji.edu.cn), Shanghai, China. He has been closely working with [Prof. Yin Wang](http://web.eecs.umich.edu/~yinw/) of the [Deep Learning Lab](https://see.tongji.edu.cn/info/1153/6621.htm) of Tongji University for nearly two years, and with Research Scientist [Dr. Saikat Basu](http://www.csc.lsu.edu/~saikat/) and [Dr. Guan Pang](https://research.fb.com/people/pang-guan/) of [Facebook Research](https://research.fb.com/) for nine months on the research of Computer Vision. He has published 3 papers as the first author, including CVPR 2019, CVPRW 2018, ACM SIGSPATIAL Workshop 2018. 
+**Tao Sun** *(in Chinese: 孙韬)* is currently pursuing his Master's Degree of Computer Science at [ETH Zurich](https://inf.ethz.ch/), Switzerland. Prior to that, he has achieved his Bachelor's Degree of Software Engineering at [Tongji University](www.tongji.edu.cn), Shanghai, China. He has been closely working with [Prof. Yin Wang](http://web.eecs.umich.edu/~yinw/) of the [Deep Learning Lab](https://see.tongji.edu.cn/info/1153/6621.htm) of Tongji University for nearly two years, and with Research Scientist [Dr. Saikat Basu](http://www.csc.lsu.edu/~saikat/) and [Dr. Guan Pang](https://research.fb.com/people/pang-guan/) of [Facebook Research](https://research.fb.com/) for nine months on the research of Computer Vision. He has published 3 papers as the first author, including CVPR 2019, CVPRW 2018, ACM SIGSPATIAL Workshop 2018. 
 
 Currently, he is working on semi-supervised learning of image segmentation, and structure-aware image recognition. His research interests mainly lie in the fields of the intersection of Deep Learning and Computer Vision. For more information, please see the [CV (PDF)](files/CV_suntao.pdf).
