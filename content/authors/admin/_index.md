@@ -21,10 +21,9 @@ organizations:
 bio: 
 
 interests:
-- Image Recognition (Classification, Detection, Segmentation)
-- Structure-Aware CV
-- Semi-/Un-Supervised Learning
-- 3D and Point-Cloud Problems
+- 2D/3D Scene Understanding
+- Multi-task Learning
+- Robustness
 
 education:
   courses:
@@ -42,7 +41,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:suntao@tongji.edu.cn'  # For a direct email link, use "mailto:test@example.org".
+  link: 'mailto:taosun47@ethz.ch'  # For a direct email link, use "mailto:test@example.org".
 - icon: github
   icon_pack: fab
   link: https://github.com/suniique
@@ -56,7 +55,7 @@ social:
   link: files/CV_suntao.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "taosun47@student.ethz.ch"
+email: "taosun47@ethz.ch"
   
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
