@@ -64,7 +64,7 @@ user_groups:
 - Visitors
 ---
 
-I am currently pursuing my Master's Degree of Computer Science at [ETH Zurich](https://inf.ethz.ch/), Switzerland, where I have been working with [Prof. Fisher Yu](http://yf.io) at the [Computer Vision Lab](https://vision.ee.ethz.ch/) (ETH Zurich) on multi-task  vision learning and [Dr. Iro Armeni](https://ir0.github.io/) on 3D point cloud perception.  My research interests lie primarily in the area of computer vision with an emphasis on robustness and multi-task learning.
+I am currently pursuing my Master's Degree of Computer Science at [ETH Zurich](https://inf.ethz.ch/), Switzerland, where I have been working with [Prof. Fisher Yu](http://yf.io) at the [VIS Group](http://vis.xyz) of [Computer Vision Lab](https://vision.ee.ethz.ch/) (ETH Zurich) on multi-task  vision learning and [Dr. Iro Armeni](https://ir0.github.io/) on 3D point cloud perception.  My research interests lie primarily in the area of computer vision with an emphasis on robustness and multi-task learning.
 
 Previously, I obtained my Bachelor's Degree of Software Engineering from [Tongji University](https://www.tongji.edu.cn), where I closely worked with [Prof. Yin Wang](http://web.eecs.umich.edu/~yinw/) in computer vision. I also got supervision from Research Scientist [Dr. Saikat Basu](http://www.csc.lsu.edu/~saikat/) of Facebook in a research collaboration. 
 
