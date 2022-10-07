@@ -34,6 +34,16 @@ date_format = "Jan 2006"
   description = "Working with [Dr. Iro Armeni](https://ir0.github.io/) and [Shengyu Huang](https://shengyuh.github.io/) for 3D point clouds registration problems in indoor scences."
 
 [[experience]]
+  title = "Software Enginnering Intern"
+  company = "ByteDance"
+  company_url = "https://www.bytedance.com/en/"
+  location = "Shanghai"
+  date_start = "2020-05-01"
+  date_end = "2020-08-31"
+  description = "Working as Software Enginnering Intern in the Recommendation Systems group, Data Detp., ByteDance."
+
+
+[[experience]]
   title = "Research Intern"
   company = "Facebook Research"
   company_url = ""
