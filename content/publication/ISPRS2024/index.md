@@ -1,15 +1,16 @@
 ---
-title: "On the Practicality of Deterministic Epistemic Uncertainty"
+title: "Nothing Stands Still: A spatiotemporal benchmark on 3D point cloud registration under large geometric and temporal change"
 authors:
-- Janis Postels
-- Mattia Segu
-- admin
-- Luca Sieber
-- Luc Van Gool
-- Fisher Yu
-- Federico Tombari
+- Tao Sun
+- Yan Hao
+- Shengyu Huang
+- Silvio Savarese
+- Konrad Schindler
+- Marc Pollefeys
+- Iro Armeni 
+
 date: "2022-01-15T00:00:00Z"
-doi: ""
+doi: "https://doi.org/10.1016/j.isprsjprs.2025.01.010"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2025-02-25T00:00:00Z"
