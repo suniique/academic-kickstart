@@ -23,7 +23,7 @@ date_format = "Jan 2006"
   company_url = "https://vis.xyz"
   location = "Zürich"
   date_start = "2021-04-01"
-  description = "Working in the Visual Intelligence and Systems (VIS) group at the Computer Vision Lab (ETH Zurich), under supervision of [Prof. Dr. Fisher Yu](http://yf.io) and [Mattia Segu](https://mattiasegu.github.io/). My research lie in the area of computer vision and the robustness of deep learning for autonomous driving."
+  description = "Working in the Visual Intelligence and Systems (VIS) group at the Computer Vision Lab (ETH Zurich), under supervision of [Fisher Yu](http://yf.io) and [Mattia Segu](https://mattiasegu.github.io/). My research lie in the area of computer vision and the robustness of deep learning for autonomous driving."
 
 [[experience]]
   title = "Research Student"
@@ -31,7 +31,7 @@ date_format = "Jan 2006"
   company_url = "https://cvg.ethz.ch/"
   location = "Zürich"
   date_start = "2021-03-01"
-  description = "Working with [Dr. Iro Armeni](https://ir0.github.io/) and [Shengyu Huang](https://shengyuh.github.io/) for 3D point clouds registration problems in indoor scences."
+  description = "Working with [Prof. Iro Armeni](https://ir0.github.io/) and [Shengyu Huang](https://shengyuh.github.io/) for 3D point clouds registration problems in indoor scences."
 
 [[experience]]
   title = "Software Enginnering Intern"
