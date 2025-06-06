@@ -36,7 +36,10 @@ tags:
 featured: true
 
 links:
+- name: Project
+  url: https://rectified-pointflow.github.io/
 url_pdf: https://arxiv.org/pdf/2506.05282
+url_code: https://github.com/GradientSpaces/Rectified-Point-Flow
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 

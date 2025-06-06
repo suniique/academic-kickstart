@@ -38,7 +38,12 @@ tags:
 featured: true
 
 links:
+- name: Project
+  url: http://nothing-stands-still.com/
+- name: NSS Challenge
+  url: https://www.nothing-stands-still.com/challenge
 url_pdf: https://arxiv.org/pdf/2311.09346
+url_code: https://github.com/GradientSpaces/nss-challenge
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 

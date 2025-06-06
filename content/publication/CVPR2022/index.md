@@ -37,6 +37,8 @@ tags:
 featured: true
 
 links:
+- name: Project
+  url: https://vis.xyz/shift
 - name: Talk
   url: https://www.youtube.com/watch?v=q39gJveIhRc
 - name: Demo
