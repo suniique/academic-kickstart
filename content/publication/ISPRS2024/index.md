@@ -10,7 +10,7 @@ authors:
 - Iro Armeni 
 
 date: "2025-02-25T00:00:00Z"
-doi: "https://doi.org/10.1016/j.isprsjprs.2025.01.010"
+# doi: "https://doi.org/10.1016/j.isprsjprs.2025.01.010"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2025-02-25T00:00:00Z"
