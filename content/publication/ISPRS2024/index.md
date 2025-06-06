@@ -1,5 +1,5 @@
 ---
-title: "Nothing Stands Still: A spatiotemporal benchmark on 3D point cloud registration under large geometric and temporal change"
+title: "Nothing Stands Still: A Spatiotemporal Benchmark on 3D Point Cloud Registration Under Large Geometric and Temporal Change"
 authors:
 - Tao Sun
 - Yan Hao
@@ -9,7 +9,7 @@ authors:
 - Marc Pollefeys
 - Iro Armeni 
 
-date: "2022-01-15T00:00:00Z"
+date: "2025-02-25T00:00:00Z"
 doi: "https://doi.org/10.1016/j.isprsjprs.2025.01.010"
 
 # Schedule page publish date (NOT publication's date).
