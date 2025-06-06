@@ -66,7 +66,7 @@ user_groups:
 - Visitors
 ---
 
-I am a PhD student in [Gradient Spaces Lab](https://gradientspaces.stanford.edu/), Stanford University, working with [Iro Armeni](https://ir0.github.io/) and [Shuran Song](https://shurans.github.io/). My research focuses on 3D vision and robotics, particularly the reasoning of 3D shapes for robotic assembly.
+I am a PhD student in [Gradient Spaces Lab](https://gradientspaces.stanford.edu/), Stanford University, working with [Iro Armeni](https://ir0.github.io/) and [Shuran Song](https://shurans.github.io/). My research focuses on 3D vision and robotics, particularly the understanding and reasoning about 3D shapes for robotic assembly tasks.
 
 Prior to this, I was at [ByteDance Seed Lab](https://seed.bytedance.com/en/) where I worked on large language models' (LLMs) post training and reasoning, and at the [Computer Vison Lab](https://vision.ee.ethz.ch/) at ETH Zurich, focusing on scene understanding and multitask learning. I hold an M.Sc. in Computer Science from [ETH Zurich](https://inf.ethz.ch/) and a B.Sc. in Software Engineering from [Tongji University](https://www.tongji.edu.cn).
 
