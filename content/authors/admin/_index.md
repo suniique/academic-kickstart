@@ -66,9 +66,9 @@ user_groups:
 - Visitors
 ---
 
-I am a PhD student in [Gradient Spaces Lab](https://gradientspaces.stanford.edu/), Stanford University, where I’m fortunate to work with [Iro Armeni](https://ir0.github.io/) and [Shuran Song](https://shurans.github.io/). My research focuses on 3D vision and its applications in robotics, and I am currently exploring perception and reasoning of 3D shapes for robotic assembly tasks.
+I am a PhD student in [Gradient Spaces Lab](https://gradientspaces.stanford.edu/), Stanford University, working with [Iro Armeni](https://ir0.github.io/) and [Shuran Song](https://shurans.github.io/). My research focuses on 3D vision and robotics. I am currently exploring perception and reasoning of 3D shapes for robotic assembly tasks.
 
-Prior to this, I was at [ByteDance Seed Lab](https://seed.bytedance.com/en/) where I worked on large language models (LLMs) post training and reasoning, and at the [Computer Vison Lab (CVL)](https://vision.ee.ethz.ch/) at ETH Zurich, focusing on scene understanding and multitask learning. I hold an M.Sc. in Computer Science from [ETH Zurich](https://inf.ethz.ch/) and a B.Sc. in Software Engineering from [Tongji University](https://www.tongji.edu.cn).
+Prior to this, I was at [ByteDance Seed Lab](https://seed.bytedance.com/en/) where I worked on large language models' (LLMs) post training and reasoning, and at the [Computer Vison Lab (CVL)](https://vision.ee.ethz.ch/) at ETH Zurich, focusing on scene understanding and multitask learning. I hold an M.Sc. in Computer Science from [ETH Zurich](https://inf.ethz.ch/) and a B.Sc. in Software Engineering from [Tongji University](https://www.tongji.edu.cn).
 
 <!-- He has been closely working with [Prof. Yin Wang](http://web.eecs.umich.edu/~yinw/) of the [Deep Learning Lab](https://see.tongji.edu.cn/info/1153/6621.htm) of Tongji University for nearly two years, and with Research Scientist [Dr. Saikat Basu](http://www.csc.lsu.edu/~saikat/) and [Dr. Guan Pang](https://research.fb.com/people/pang-guan/) of [Facebook Research](https://research.fb.com/) for nine months on the research of Computer Vision. He has published 3 papers as the first author, including CVPR 2019, CVPRW 2018, ACM SIGSPATIAL Workshop 2018.  -->
 
