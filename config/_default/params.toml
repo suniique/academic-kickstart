@@ -85,12 +85,12 @@ edit_page = {repo_url = "https://github.com/gcushen/hugo-academic", repo_branch 
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "taosun47@student.ethz.ch"
+email = "taosun@stanford.edu"
 phone = ""
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-address = {street = "Paul-Feyerabend-Hof 5", city = "Zürich", region = "", postcode = "8049", country = "Switzerland", country_code = "CH"}
+address = {street = "", city = "Stanford", region = "", postcode = "94305", country = "CA", country_code = "US"}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
