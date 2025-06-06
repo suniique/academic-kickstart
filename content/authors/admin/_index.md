@@ -24,7 +24,7 @@ bio:
 
 interests:
 - 3D Vision
-- Vision-Language Models
+- Vision-Language-Action (VLA) Models
 - Robotics
 
 # education:
