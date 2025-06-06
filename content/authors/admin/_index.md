@@ -70,6 +70,8 @@ I am a PhD student in [Gradient Spaces Lab](https://gradientspaces.stanford.edu/
 
 Prior to this, I was at [ByteDance Seed Lab](https://seed.bytedance.com/en/) where I worked on large language models' (LLMs) post training and reasoning, and at the [Computer Vison Lab](https://vision.ee.ethz.ch/) at ETH Zurich, focusing on scene understanding and multitask learning. I hold an M.Sc. in Computer Science from [ETH Zurich](https://inf.ethz.ch/) and a B.Sc. in Software Engineering from [Tongji University](https://www.tongji.edu.cn).
 
+Feel free to reach out to me via email for chats and collaborations!
+
 <!-- He has been closely working with [Prof. Yin Wang](http://web.eecs.umich.edu/~yinw/) of the [Deep Learning Lab](https://see.tongji.edu.cn/info/1153/6621.htm) of Tongji University for nearly two years, and with Research Scientist [Dr. Saikat Basu](http://www.csc.lsu.edu/~saikat/) and [Dr. Guan Pang](https://research.fb.com/people/pang-guan/) of [Facebook Research](https://research.fb.com/) for nine months on the research of Computer Vision. He has published 3 papers as the first author, including CVPR 2019, CVPRW 2018, ACM SIGSPATIAL Workshop 2018.  -->
 
 <!-- Currently, he is working on semi-supervised learning of image segmentation, and structure-aware image recognition. His research interests mainly lie in the fields of the intersection of Deep Learning and Computer Vision. For more information, please see the [CV (PDF)](files/CV_suntao.pdf). -->
