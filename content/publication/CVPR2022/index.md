@@ -24,11 +24,14 @@ publication_types: ["1"]
 # Publication name and optional abbreviated publication name.
 publication: In Procedings of *The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2022*
 publication_short: In *CVPR 2022*
+venue_label: CVPR 2022
+homepage_image: thumbnail.webp
+visual_alt: "SHIFT synthetic driving scenes under changing weather, daylight, and road conditions."
 
 abstract: Adapting to a continuously evolving environment is a safety-critical challenge inevitably faced by all autonomous-driving systems. Existing image- and video-based driving datasets, however, fall short of capturing the mutable nature of the real world. In this paper, we introduce the largest synthetic dataset for autonomous driving, SHIFT. It presents discrete and continuous shifts in cloudiness, rain and fog intensity, time of day, and vehicle and pedestrian density. Featuring a comprehensive sensor suite and annotations for several mainstream perception tasks, SHIFT allows to investigate how a perception systems’ performance degrades at increasing levels of domain shift, fostering the development of continuous adaptation strategies to mitigate this problem and assessing the robustness and generality of a model. Our dataset and benchmark toolkit is publicly available at [https://vis.xyz/shift](https://vis.xyz/shift).
 
 # Summary. An optional shortened abstract.
-summary: We introduce the largest synthetic dataset for autonomous driving to study continuous domain adaptation and multi-task perception.
+summary: "A synthetic driving dataset with continuously changing conditions for studying domain adaptation and multitask perception."
 
 tags:
 - Computer Vision
@@ -69,4 +72,3 @@ projects:
 #   Otherwise, set `slides: ""`.
 slides: example
 ---
-

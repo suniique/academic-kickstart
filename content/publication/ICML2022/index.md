@@ -4,7 +4,7 @@ authors:
 - Janis Postels
 - Mattia Segu
 - admin
-- Luca Sieber
+- Luca Daniel Sieber
 - Luc Van Gool
 - Fisher Yu
 - Federico Tombari
@@ -21,13 +21,17 @@ publishDate: "2022-03-15T00:00:00Z"
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: In Procedings of the *International Conference on Machine Learning (CVPR) 2022*
+publication: Proceedings of the International Conference on Machine Learning (ICML) 2022
 publication_short: In *ICML 2022*
+equal_contribution: true
+venue_label: ICML 2022
+homepage_image: thumbnail.webp
+visual_alt: "A diagram evaluating deterministic uncertainty methods under distribution shifts and on semantic segmentation."
 
 abstract: A set of novel approaches for estimating epistemic uncertainty in deep neural networks with a single forward pass has recently emerged as a valid alternative to Bayesian Neural Networks. On the premise of informative representations, these deterministic uncertainty methods (DUMs) achieve strong performance on detecting out-of-distribution (OOD) data while adding negligible computational costs at inference time. However, it remains unclear whether DUMs are well calibrated and can seamlessly scale to real-world applications - both prerequisites for their practical deployment. To this end, we first provide a taxonomy of DUMs, and evaluate their calibration under continuous distributional shifts. Then, we extend them to semantic segmentation. We find that, while DUMs scale to realistic vision tasks and perform well on OOD detection, the practicality of current methods is undermined by poor calibration under distributional shifts.
 
 # Summary. An optional shortened abstract.
-summary: We provide a taxonomy of DUMs, evaluate their calibration under continuous distributional shifts, and extend them to semantic segmentation.
+summary: "Testing whether deterministic uncertainty estimates remain reliable under distribution shifts and in dense prediction tasks."
 
 tags:
 - Computer Vision
@@ -60,4 +64,3 @@ projects:
 #   Otherwise, set `slides: ""`.
 slides: example
 ---
-

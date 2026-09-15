@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Tao Sun</title>
+  <rect width="64" height="64" rx="12" fill="#2962ff"/>
+  <path d="M9,18 L30,18 L30,24 L23,24 L23,46 L17,46 L17,24 L9,24 Z" fill="#fff"/>
+  <path d="M36,18 L55,18 L55,24 L41,24 L41,29 L54,29 L54,46 L35,46 L35,40 L48,40 L48,35 L35,35 L35,18 Z" fill="#fff"/>
+</svg>

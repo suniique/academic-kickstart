@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tao Sun is a PhD candidate at Stanford University working on 3D vision, generative geometry, and world-action models for robotics.">
+  <meta name="author" content="Tao Sun">
+  <meta property="og:site_name" content="Tao Sun">
+  <meta property="og:title" content="Tao Sun · Stanford University">
+  <meta property="og:description" content="3D vision, generative geometry, and world-action models for robotics.">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ "img/icon-192.png" | absURL }}">
+  <meta name="theme-color" content="#2962ff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "img/icon-32.png" | relURL }}?v=202609">
+  <link rel="apple-touch-icon" sizes="192x192" href="{{ "img/icon-192.png" | relURL }}?v=202609">
+  {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="Tao Sun">{{ end }}
+  {{ $style := resources.Get "css/homepage.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  <title>Tao Sun · Stanford University</title>
+  {{ partial "marketing/google_analytics" . }}
+</head>
+<body class="homepage" id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="page-width header-inner">
+      <a class="wordmark" href="#about" aria-label="Tao Sun, home">Tao Sun</a>
+      <nav aria-label="Main navigation">
+        <a href="#about" aria-current="location">Home</a>
+        <a href="#updates">News</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-width">
+    {{ $author := site.GetPage "authors/admin" }}
+    <section id="about" class="intro" aria-labelledby="intro-title">
+      <aside class="profile">
+        {{ $portrait := $author.Resources.GetMatch "avatar.jpg" }}
+        <img class="portrait" src="{{ $portrait.RelPermalink }}" width="200" height="200" alt="Tao Sun" fetchpriority="high">
+        <h1 id="intro-title">Tao Sun</h1>
+        <p class="intro-role">PhD Candidate</p>
+        <p class="profile-affiliation"><a href="https://stanford.edu/">Stanford University</a><br><a href="https://gradientspaces.stanford.edu/">Gradient Spaces Lab</a></p>
+        <div class="social-links" aria-label="Academic and social profiles">
+          <a href="mailto:taosun@stanford.edu">Email <span aria-hidden="true">↗</span></a>
+          <a href="https://scholar.google.com/citations?user=x1O-cHYAAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/suniique">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/tao-sun-7b4a31151/">LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+      </aside>
+      <div class="intro-copy">
+        <div class="biography">{{ $author.Content }}</div>
+        <div class="intro-interests"><h2>Interests</h2><ul>{{ range $author.Params.interests }}<li>{{ . }}</li>{{ end }}</ul></div>
+      </div>
+    </section>
+
+    <section id="updates" class="news-section section" aria-labelledby="news-title">
+      <div class="section-heading"><h2 id="news-title">News &amp; updates</h2></div>
+      <div class="news-list">
+        {{ range first 7 site.Data.homepage.news }}
+        <div class="news-item"><time datetime="{{ .datetime }}">{{ .date }}</time><p>{{ .text | markdownify }}</p></div>
+        {{ end }}
+      </div>
+      {{ if gt (len site.Data.homepage.news) 7 }}
+      <details class="news-more">
+        <summary><span class="news-show-more">Show more</span><span class="news-show-less">Show less</span></summary>
+        <div class="news-list">
+          {{ range after 7 site.Data.homepage.news }}
+          <div class="news-item"><time datetime="{{ .datetime }}">{{ .date }}</time><p>{{ .text | markdownify }}</p></div>
+          {{ end }}
+        </div>
+      </details>
+      {{ end }}
+    </section>
+
+    <section id="research" class="section research-section" aria-labelledby="research-title">
+      <div class="section-heading"><h2 id="research-title">Research</h2></div>
+      <p class="research-intro">I study how machines can understand the 3D world and use that understanding to act. My work connects geometric learning, generative models, and robot planning.</p>
+      <div class="research-directions">
+        {{ range $i, $direction := site.Data.homepage.research }}
+        <div class="direction"><span class="direction-number" aria-hidden="true">0{{ add $i 1 }}</span><h3>{{ .title }}</h3><p>{{ .text }}</p></div>
+        {{ end }}
+      </div>
+    </section>
+
+    <section id="publications" class="section publications-section" aria-labelledby="publications-title">
+      <div class="section-heading"><h2 id="publications-title">Publications</h2><a class="section-link" href="https://scholar.google.com/citations?user=x1O-cHYAAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a></div>
+      <p class="publication-note">* Equal contribution</p>
+      {{ range (where site.RegularPages "Section" "publication").GroupByDate "2006" }}
+      <div class="publication-year"><h3>{{ .Key }}</h3><div class="year-line"></div></div>
+      {{ range .Pages }}{{ partial "homepage/publication.html" . }}{{ end }}
+      {{ end }}
+      <p class="archive-link"><a href="{{ "publication/" | relURL }}">Browse the publication archive <span aria-hidden="true">↗</span></a></p>
+    </section>
+
+    <section id="background" class="section background-section" aria-label="Background and resources">
+      <div><h2>Background</h2><p>Previously at <a href="https://seed.bytedance.com/en/">ByteDance Seed Lab</a>, working on LLM post-training and reasoning, and the <a href="https://vision.ee.ethz.ch/">Computer Vision Lab at ETH Zurich</a>, working on scene understanding and multitask learning.</p><div class="education"><p><strong>M.Sc. in Computer Science</strong><br>ETH Zurich</p><p><strong>B.Sc. in Computer Engineering</strong><br>Tongji University</p></div></div>
+      <div class="resources"><h2>Open resources</h2><p>Lecture notes from my time at ETH Zurich.</p>{{ range where site.RegularPages "Section" "project" }}<a class="resource-link" href="{{ .Params.external_link }}">{{ .Title }}<span aria-hidden="true">↗</span></a>{{ end }}</div>
+    </section>
+
+    <section id="contact" class="section contact-section" aria-labelledby="contact-title"><div><p class="eyebrow">Get in touch</p><h2 id="contact-title">Let’s talk research.</h2><p>I’m happy to connect about 3D vision, world models, and robotics.</p></div><a class="contact-email" href="mailto:taosun@stanford.edu">taosun@stanford.edu <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="page-width footer"><span>© {{ now.Year }} Tao Sun</span><span>Last updated September 2026</span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
+  {{ $script := resources.Get "js/homepage.js" | minify | fingerprint }}
+  <script src="{{ $script.RelPermalink }}" defer></script>
+</body>
+</html>

@@ -1,2 +1,6 @@
 public/
 .idea/
+
+# Hugo's local build artifacts (source images remain in content/).
+.hugo_build.lock
+resources/_gen/

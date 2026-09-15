@@ -68,11 +68,11 @@ user_groups:
 - Visitors
 ---
 
-I am a PhD candidate in the [Gradient Spaces Lab](https://gradientspaces.stanford.edu/) at [Stanford University](https://stanford.edu), advised by [Iro Armeni](https://ir0.github.io/) and [Shuran Song](https://shurans.github.io/). I build geometric and generative models that help robots perceive, imagine, and act in the physical world—from registering evolving 3D environments to planning contact-rich assembly.
+I am a PhD student in the [Gradient Spaces Lab](https://gradientspaces.stanford.edu/) at [Stanford University](https://stanford.edu/), working with [Iro Armeni](https://ir0.github.io/) and [Shuran Song](https://shurans.github.io/). I am fortunate to be supported by the [Stanford Graduate Fellowship (SGF)](https://vpge.stanford.edu/fellowships-funding/sgf) and the [Stanford Robotics Center (SRC)](https://src.stanford.edu/).
 
-Since June 2026, I have been a research intern at [NVIDIA Cosmos Lab](https://research.nvidia.com/labs/cosmos-lab/), working on world-action models for robot planning and control. Previously, I worked at [ByteDance Seed Lab](https://seed.bytedance.com/en/) on LLM post-training and reasoning, and at the [Computer Vision Lab](https://vision.ee.ethz.ch/) at ETH Zurich on scene understanding and multitask learning. I hold an M.Sc. in Computer Science from ETH Zurich and a B.Sc. in Software Engineering from Tongji University.
+My research connects **3D vision, generative models, and robotics**. I develop geometric representations and generative methods for understanding scenes, estimating poses, and assembling shapes, with the goal of enabling robots to reason about and interact with the physical world.
 
-I am excited to connect with collaborators interested in world models, 3D understanding, and capable robots.
+Since June 2026, I have been a research intern at [NVIDIA Cosmos Lab](https://research.nvidia.com/labs/cosmos-lab/), working on **World-Action Models (WAMs) for robot planning and control**. Prior to Stanford, I obtained my M.Sc. in Computer Science from [ETH Zurich](https://ethz.ch/en.html) and my B.Sc. in Computer Engineering from [Tongji University](https://www.tongji.edu.cn/).
 
 <!-- He has been closely working with [Prof. Yin Wang](http://web.eecs.umich.edu/~yinw/) of the [Deep Learning Lab](https://see.tongji.edu.cn/info/1153/6621.htm) of Tongji University for nearly two years, and with Research Scientist [Dr. Saikat Basu](http://www.csc.lsu.edu/~saikat/) and [Dr. Guan Pang](https://research.fb.com/people/pang-guan/) of [Facebook Research](https://research.fb.com/) for nine months on the research of Computer Vision. He has published 3 papers as the first author, including CVPR 2019, CVPRW 2018, ACM SIGSPATIAL Workshop 2018.  -->
 

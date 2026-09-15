@@ -44,7 +44,7 @@ local_business_type = ""
 org_name = "Tao Sun"
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = "Tao Sun's Personal Site"
+description = "Tao Sun is a PhD candidate at Stanford University working on 3D vision, generative geometry, and world-action models for robotics."
 
 # Display a logo in navigation bar rather than title (optional).
 #   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".

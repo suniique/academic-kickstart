@@ -14,10 +14,14 @@ publishDate: "2026-09-09T00:00:00Z"
 publication_types: ["1"]
 publication: European Conference on Computer Vision (ECCV) 2026
 publication_short: "ECCV 2026 · Oral · Best Paper Candidate"
+venue_label: ECCV 2026
+recognition: Oral · Best Paper Candidate (top 10)
+homepage_image: thumbnail.webp
+visual_alt: "RAP aligns multiple colored point clouds into a shared 3D scene across objects, indoor rooms, and outdoor environments."
 
 abstract: "Point cloud registration aligns multiple unposed point clouds into a common frame, a core capability for 3D reconstruction and robot localization. We cast registration as conditional generation: a learned continuous point-wise velocity field transports noisy points to a registered scene, from which the pose of each view is recovered. The resulting model performs strongly across pairwise and multi-view registration benchmarks, particularly under low overlap, and generalizes across scales and sensor modalities."
 
-summary: A flow-matching formulation for scalable, generalizable point cloud registration.
+summary: "A single flow-matching model for pairwise and multi-view registration, generalizing across scene scales and sensor modalities."
 
 tags:
 - Point Cloud Registration

@@ -20,11 +20,14 @@ publication_types: ["1"]
 # Publication name and optional abbreviated publication name.
 publication: In Procedings of *2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW) 2018*
 publication_short: In *CVPR Workshop 2018 (DeepGlobe)*
+venue_label: CVPR Workshops · DeepGlobe 2018
+homepage_image: thumbnail.webp
+visual_alt: "Stacked U-Net architecture with auxiliary outputs, skip connections, and encoder-decoder blocks."
 
 abstract: With the recent advances of Convolutional Neural Networks(CNN) in computer vision, there have been rapid progresses in extracting roads and other features from satellite imagery for mapping and other purposes. In this paper, we propose a new method for road extraction using stacked U-Nets with multiple output. A hybrid loss function is used to address the problem of unbalanced classes of training data. Post-processing methods, including road map vectorization and shortest path search with hierarchical thresholds, help improve recall. The overall improvement of mean IoU compared to the vanilla VGG network is more than 20%.
 
 # Summary. An optional shortened abstract.
-summary: A new method for road extraction using stacked U-Nets with multiple output, hybrid loss function used to address the problem of unbalanced classes of training data, and post-processing methods to bridge prediction gaps.
+summary: "Stacked U-Nets, auxiliary supervision, and topology-aware post-processing for extracting connected roads from satellite imagery."
 
 tags:
 - Computer Vision
@@ -58,4 +61,3 @@ projects:
 #   Otherwise, set `slides: ""`.
 slides: example
 ---
-
