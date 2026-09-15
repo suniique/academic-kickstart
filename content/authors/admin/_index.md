@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: PhD Student
+role: PhD Candidate · 3D Vision & Robotics
 
 # Organizations/Affiliations
 organizations:
@@ -18,14 +18,16 @@ organizations:
   url: "https://www.stanford.edu/"
 - name: Gradient Spaces Lab
   url: "https://gradientspaces.stanford.edu/"
+- name: NVIDIA Cosmos Lab
+  url: "https://research.nvidia.com/labs/cosmos-lab/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: 
 
 interests:
-- 3D Vision
-- Vision-Language-Action (VLA) Models
-- Robotics
+- World Models & Embodied AI
+- 3D Vision & Geometric Learning
+- Robot Learning, Planning & Control
 
 # education:
 #   courses:
@@ -66,11 +68,11 @@ user_groups:
 - Visitors
 ---
 
-I am a PhD student in [Gradient Spaces Lab](https://gradientspaces.stanford.edu/), [Stanford University](https://stanford.edu), working with [Iro Armeni](https://ir0.github.io/) and [Shuran Song](https://shurans.github.io/). My research focuses on 3D vision and robotics, particularly the understanding and reasoning about 3D shapes for robotic assembly tasks.
+I am a PhD candidate in the [Gradient Spaces Lab](https://gradientspaces.stanford.edu/) at [Stanford University](https://stanford.edu), advised by [Iro Armeni](https://ir0.github.io/) and [Shuran Song](https://shurans.github.io/). I build geometric and generative models that help robots perceive, imagine, and act in the physical world—from registering evolving 3D environments to planning contact-rich assembly.
 
-Prior to this, I was at [ByteDance Seed Lab](https://seed.bytedance.com/en/) where I worked on large language models' (LLMs) post training and reasoning, and at the [Computer Vison Lab](https://vision.ee.ethz.ch/) at ETH Zurich, focusing on scene understanding and multitask learning. I hold an M.Sc. in Computer Science from [ETH Zurich](https://inf.ethz.ch/) and a B.Sc. in Software Engineering from [Tongji University](https://www.tongji.edu.cn).
+Since June 2026, I have been a research intern at [NVIDIA Cosmos Lab](https://research.nvidia.com/labs/cosmos-lab/), working on world-action models for robot planning and control. Previously, I worked at [ByteDance Seed Lab](https://seed.bytedance.com/en/) on LLM post-training and reasoning, and at the [Computer Vision Lab](https://vision.ee.ethz.ch/) at ETH Zurich on scene understanding and multitask learning. I hold an M.Sc. in Computer Science from ETH Zurich and a B.Sc. in Software Engineering from Tongji University.
 
-Feel free to reach out to me via email for chats and collaborations!
+I am excited to connect with collaborators interested in world models, 3D understanding, and capable robots.
 
 <!-- He has been closely working with [Prof. Yin Wang](http://web.eecs.umich.edu/~yinw/) of the [Deep Learning Lab](https://see.tongji.edu.cn/info/1153/6621.htm) of Tongji University for nearly two years, and with Research Scientist [Dr. Saikat Basu](http://www.csc.lsu.edu/~saikat/) and [Dr. Guan Pang](https://research.fb.com/people/pang-guan/) of [Facebook Research](https://research.fb.com/) for nine months on the research of Computer Vision. He has published 3 papers as the first author, including CVPR 2019, CVPRW 2018, ACM SIGSPATIAL Workshop 2018.  -->
 
