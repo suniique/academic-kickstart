@@ -1,6 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <title>Tao Sun</title>
-  <rect width="64" height="64" rx="12" fill="#2962ff"/>
-  <path d="M9,18 L30,18 L30,24 L23,24 L23,46 L17,46 L17,24 L9,24 Z" fill="#fff"/>
-  <path d="M36,18 L55,18 L55,24 L41,24 L41,29 L54,29 L54,46 L35,46 L35,40 L48,40 L48,35 L35,35 L35,18 Z" fill="#fff"/>
+  <title>Tao Sun — ascending steps</title>
+  <g stroke-linejoin="round">
+    <path d="M42,4 L55,10.5 L42,17 L29,10.5 Z" fill="#2962ff"/>
+    <path d="M29,10.5 L42,17 L42,31 L29,24.5 Z" fill="#1452dd"/>
+    <path d="M42,17 L55,10.5 L55,24.5 L42,31 Z" fill="#0c3aa8"/>
+    <path d="M31,19 L44,25.5 L31,32 L18,25.5 Z" fill="#2962ff"/>
+    <path d="M18,25.5 L31,32 L31,46 L18,39.5 Z" fill="#1452dd"/>
+    <path d="M31,32 L44,25.5 L44,39.5 L31,46 Z" fill="#0c3aa8"/>
+    <path d="M20,34 L33,40.5 L20,47 L7,40.5 Z" fill="#2962ff"/>
+    <path d="M7,40.5 L20,47 L20,61 L7,54.5 Z" fill="#1452dd"/>
+    <path d="M20,47 L33,40.5 L33,54.5 L20,61 Z" fill="#0c3aa8"/>
+  </g>
 </svg>

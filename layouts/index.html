@@ -15,9 +15,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="canonical" href="{{ .Permalink }}">
-  <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ "img/icon-32.png" | relURL }}?v=202609">
-  <link rel="apple-touch-icon" sizes="192x192" href="{{ "img/icon-192.png" | relURL }}?v=202609">
+  <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}?v=steps">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "img/icon-32.png" | relURL }}?v=steps">
+  <link rel="apple-touch-icon" sizes="192x192" href="{{ "img/icon-192.png" | relURL }}?v=steps">
   {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="Tao Sun">{{ end }}
   {{ $style := resources.Get "css/homepage.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
