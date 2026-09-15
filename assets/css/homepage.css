@@ -277,7 +277,7 @@ h2 {
   font-weight:600
 }
 .news-item a {
-  color:inherit;
+  color:var(--accent);
   text-decoration:underline;
   text-decoration-color:#d6b7b7;
   text-underline-offset:3px
@@ -421,6 +421,9 @@ h2 {
 .authors strong {
   color:var(--ink);
   font-weight:600
+}
+.authors a strong {
+  color:inherit
 }
 sup {
   font-size:.8em;
@@ -944,6 +947,21 @@ h1,h2,h3,h4  {
 }
 .intro h1  {
   font-size:32px; font-weight:400; line-height:1.3; letter-spacing:0; margin:0 0 9px;
+}
+.name-divider {
+  margin:0 .12em;
+  font-weight:300;
+  color:var(--muted);
+}
+.name-chinese {
+  display:inline-block;
+  font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+  font-size:1em;
+  font-weight:300;
+  letter-spacing:0;
+  color:inherit;
+  white-space:nowrap;
+  vertical-align:baseline;
 }
 .intro-role  {
   font:400 18px/1.5 Montserrat,Arial,sans-serif; margin:0 0 4px; color:#777;

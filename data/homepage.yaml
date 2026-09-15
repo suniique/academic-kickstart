@@ -4,31 +4,43 @@ news:
     text: "[Register Any Point](https://register-any-point.github.io/) is an **ECCV 2026 Best Paper Award Candidate (top 10)** and an oral presentation."
   - date: Jun 2026
     datetime: "2026-06"
-    text: "[Register Any Point (RAP)](https://register-any-point.github.io/) was accepted to **ECCV 2026**."
+    text: "[Register Any Point](https://register-any-point.github.io/) was accepted to **ECCV 2026**."
   - date: Jun 2026
     datetime: "2026-06"
-    text: "I joined **[NVIDIA Cosmos Lab](https://research.nvidia.com/labs/cosmos-lab/)** as a research intern, working on world-action models for robot planning and control."
+    text: "I joined NVIDIA **[Cosmos Lab](https://research.nvidia.com/labs/cosmos-lab/)** as a research intern, working on world-action models for robot planning and control."
+  - date: Jun 2026
+    datetime: "2026-06-03"
+    text: "I co-organized the [Nothing Stands Still Challenge](https://cv4aec.github.io/#challenge) at **CVPR 2026**, as part of the Computer Vision for the Built World workshop."
   - date: May 2026
     datetime: "2026-05"
-    text: "I received the **[Stanford Robotics Center Robotics Scholars Fellowship](https://src.stanford.edu/src-robotics-scholars)**."
+    text: "I received the Stanford Robotics Center **[Robotics Scholars Fellowship](https://src.stanford.edu/src-robotics-scholars)**."
   - date: Apr 2026
     datetime: "2026-04"
-    text: "[Energy-based Compositional Diffusion Planning (ECD)](https://github.com/GradientSpaces/ECD) was accepted to **ICML 2026**."
+    text: "[Energy-based Compositional Diffusion Planning](https://github.com/GradientSpaces/ECD) was accepted to **ICML 2026**."
   - date: Apr 2026
     datetime: "2026-04-05"
-    text: "[Nothing Stands Still](https://www.nothing-stands-still.com/) received the **[ISPRS Journal Best Paper Award for 2025](https://www.isprs.org/society/awards/helava/2025.aspx)**."
+    text: "[Nothing Stands Still](https://www.nothing-stands-still.com/) received the ISPRS Journal **[Best Paper Award for 2025](https://www.isprs.org/society/awards/helava/2025.aspx)**."
   - date: Jan 2026
     datetime: "2026-01"
-    text: "[Real-3DQA: Do 3D Large Language Models Really Understand 3D Spatial Relationships?](https://real-3dqa.github.io/) was accepted to **ICLR 2026**."
+    text: "[Real-3DQA](https://real-3dqa.github.io/) was accepted to **ICLR 2026**."
   - date: Sep 2025
     datetime: "2025-09"
     text: "[Rectified Point Flow](https://rectified-pointflow.github.io/) was accepted to **NeurIPS 2025** as a **Spotlight**."
+  - date: May 2025
+    datetime: "2025-05-19"
+    text: "I co-organized the [Nothing Stands Still Challenge](https://www.nothing-stands-still.com/challenge_2025) with HILTI at **ICRA 2025**, as part of the 4th Workshop on Future of Construction."
   - date: Apr 2025
     datetime: "2025-04"
     text: "We released **[Seed1.5-Thinking](https://arxiv.org/abs/2504.13914)**, our technical report on advancing reasoning models with reinforcement learning."
   - date: Jan 2025
     datetime: "2025-01"
     text: "[Nothing Stands Still](https://www.nothing-stands-still.com/) was accepted to the **ISPRS Journal of Photogrammetry and Remote Sensing**."
+  - date: Sep 2024
+    datetime: "2024-09"
+    text: "I received the **[Stanford Graduate Fellowship](https://vpge.stanford.edu/fellowships-funding/sgf)**, providing three years of support for my PhD research."
+  - date: May 2024
+    datetime: "2024-05"
+    text: "I co-organized the [Nothing Stands Still Challenge](https://www.nothing-stands-still.com/challenge_2024) with HILTI at **ICRA 2024**, as part of the 3rd Workshop on Future of Construction."
 research:
   - title: 3D world understanding
     text: Learning geometry and correspondences to register, reconstruct, and understand scenes across sensors, scales, and time.

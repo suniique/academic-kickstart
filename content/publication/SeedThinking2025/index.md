@@ -2,7 +2,8 @@
 title: "Seed1.5-Thinking: Advancing Superb Reasoning Models with Reinforcement Learning"
 authors:
 - ByteDance Seed
-authors_display: "ByteDance Seed (including **Tao Sun**)"
+authors_including:
+- Tao Sun
 date: "2025-04-10T00:00:00Z"
 publishDate: "2025-04-10T00:00:00Z"
 publication_types: ["4"]

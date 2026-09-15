@@ -68,7 +68,7 @@ user_groups:
 - Visitors
 ---
 
-I am a PhD student in the [Gradient Spaces Lab](https://gradientspaces.stanford.edu/) at [Stanford University](https://stanford.edu/), working with [Iro Armeni](https://ir0.github.io/) and [Shuran Song](https://shurans.github.io/). I am fortunate to be supported by the [Stanford Graduate Fellowship (SGF)](https://vpge.stanford.edu/fellowships-funding/sgf) and the [Stanford Robotics Center (SRC)](https://src.stanford.edu/).
+I am a PhD candidate in the [Gradient Spaces Lab](https://gradientspaces.stanford.edu/) at [Stanford University](https://stanford.edu/), working with [Iro Armeni](https://ir0.github.io/) and [Shuran Song](https://shurans.github.io/). I am fortunate to be supported by the [Stanford Graduate Fellowship (SGF)](https://vpge.stanford.edu/fellowships-funding/sgf) and the [Stanford Robotics Center (SRC)](https://src.stanford.edu/).
 
 My research connects **3D vision, generative models, and robotics**. I develop geometric representations and generative methods for understanding scenes, estimating poses, and assembling shapes, with the goal of enabling robots to reason about and interact with the physical world.
 

@@ -1,0 +1,24 @@
+{{- $affiliations := slice -}}
+{{- range .author.Params.organizations -}}
+  {{- $affiliations = $affiliations | append (dict "@type" "Organization" "name" .name "url" .url) -}}
+{{- end -}}
+{{- $profiles := slice -}}
+{{- range .author.Params.social -}}
+  {{- if hasPrefix .link "https://" -}}
+    {{- $profiles = $profiles | append .link -}}
+  {{- end -}}
+{{- end -}}
+{{- $person := dict
+  "@type" "Person"
+  "@id" (printf "%s#person" .page.Permalink)
+  "name" "Tao Sun"
+  "alternateName" "孙韬"
+  "url" .page.Permalink
+  "image" .portrait.Permalink
+  "jobTitle" "PhD Candidate"
+  "affiliation" $affiliations
+  "sameAs" $profiles
+  "knowsAbout" .author.Params.interests
+-}}
+{{- $schema := dict "@context" "https://schema.org" "@type" "ProfilePage" "url" .page.Permalink "mainEntity" $person -}}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>

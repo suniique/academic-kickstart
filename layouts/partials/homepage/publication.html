@@ -13,7 +13,7 @@
   <div class="paper-content">
     <div class="paper-meta"><span class="venue">{{ .Params.venue_label | default (.Params.publication_short | markdownify | plainify) }}</span>{{ with .Params.recognition }}<span class="recognition">{{ . }}</span>{{ end }}</div>
     <h4 id="paper-{{ .File.ContentBaseName }}-{{ .File.UniqueID }}"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
-    <p class="authors">{{ with .Params.authors_display }}{{ . | markdownify }}{{ else }}{{ range $index, $name := .Params.authors }}{{ if $index }}, {{ end }}{{ if or (eq $name "admin") (eq $name "Tao Sun") }}<strong>Tao Sun</strong>{{ else }}{{ $name }}{{ end }}{{ if and $paper.Params.equal_contribution (lt $index 2) }}<sup>*</sup>{{ end }}{{ end }}{{ end }}</p>
+    <p class="authors">{{ with .Params.authors_display }}{{ . | markdownify }}{{ else }}{{ range $index, $name := .Params.authors }}{{ if $index }}, {{ end }}{{ partial "homepage/author.html" $name }}{{ if and $paper.Params.equal_contribution (lt $index 2) }}<sup>*</sup>{{ end }}{{ end }}{{ with .Params.authors_including }} (including {{ range $index, $name := . }}{{ if $index }}, {{ end }}{{ partial "homepage/author.html" $name }}{{ end }}){{ end }}{{ end }}</p>
     <p class="paper-summary">{{ .Params.summary }}</p>
     <div class="paper-links">
       {{ with .Params.url_pdf }}{{ partial "homepage/paper-link.html" (dict "paper" $paper "url" . "label" "Paper") }}{{ end }}

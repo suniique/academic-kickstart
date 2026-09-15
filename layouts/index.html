@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  {{ $author := site.GetPage "authors/admin" }}
+  {{ $portrait := $author.Resources.GetMatch "avatar.jpg" }}
+  {{ $seoTitle := "Tao Sun (孙韬) | Stanford · 3D Vision & Robotics" }}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Tao Sun is a PhD candidate at Stanford University working on 3D vision, generative geometry, and world-action models for robotics.">
   <meta name="author" content="Tao Sun">
   <meta property="og:site_name" content="Tao Sun">
-  <meta property="og:title" content="Tao Sun · Stanford University">
+  <meta property="og:title" content="{{ $seoTitle }}">
+  <meta property="og:type" content="website">
   <meta property="og:description" content="3D vision, generative geometry, and world-action models for robotics.">
   <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:image" content="{{ "img/icon-192.png" | absURL }}">
+  <meta property="og:image" content="{{ $portrait.Permalink }}">
+  <meta property="og:image:width" content="{{ $portrait.Width }}">
+  <meta property="og:image:height" content="{{ $portrait.Height }}">
+  <meta property="og:image:alt" content="Tao Sun (孙韬), PhD candidate at Stanford University">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ $seoTitle }}">
+  <meta name="twitter:description" content="3D vision, generative geometry, and world-action models for robotics.">
+  <meta name="twitter:image" content="{{ $portrait.Permalink }}">
+  <meta name="twitter:image:alt" content="Tao Sun (孙韬), PhD candidate at Stanford University">
+  {{ partial "homepage/profile-schema.html" (dict "page" . "author" $author "portrait" $portrait) }}
   <meta name="theme-color" content="#2962ff">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +34,7 @@
   {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="Tao Sun">{{ end }}
   {{ $style := resources.Get "css/homepage.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-  <title>Tao Sun · Stanford University</title>
+  <title>{{ $seoTitle }}</title>
   {{ partial "marketing/google_analytics" . }}
 </head>
 <body class="homepage" id="top">
@@ -45,7 +58,7 @@
       <aside class="profile">
         {{ $portrait := $author.Resources.GetMatch "avatar.jpg" }}
         <img class="portrait" src="{{ $portrait.RelPermalink }}" width="200" height="200" alt="Tao Sun" fetchpriority="high">
-        <h1 id="intro-title">Tao Sun</h1>
+        <h1 id="intro-title">Tao Sun <span class="name-divider" aria-hidden="true">|</span> <span class="name-chinese" lang="zh-Hans">孙韬</span></h1>
         <p class="intro-role">PhD Candidate</p>
         <p class="profile-affiliation"><a href="https://stanford.edu/">Stanford University</a><br><a href="https://gradientspaces.stanford.edu/">Gradient Spaces Lab</a></p>
         <div class="social-links" aria-label="Academic and social profiles">
@@ -64,15 +77,15 @@
     <section id="updates" class="news-section section" aria-labelledby="news-title">
       <div class="section-heading"><h2 id="news-title">News &amp; updates</h2></div>
       <div class="news-list">
-        {{ range first 7 site.Data.homepage.news }}
+        {{ range first 8 site.Data.homepage.news }}
         <div class="news-item"><time datetime="{{ .datetime }}">{{ .date }}</time><p>{{ .text | markdownify }}</p></div>
         {{ end }}
       </div>
-      {{ if gt (len site.Data.homepage.news) 7 }}
+      {{ if gt (len site.Data.homepage.news) 8 }}
       <details class="news-more">
         <summary><span class="news-show-more">Show more</span><span class="news-show-less">Show less</span></summary>
         <div class="news-list">
-          {{ range after 7 site.Data.homepage.news }}
+          {{ range after 8 site.Data.homepage.news }}
           <div class="news-item"><time datetime="{{ .datetime }}">{{ .date }}</time><p>{{ .text | markdownify }}</p></div>
           {{ end }}
         </div>

@@ -1,0 +1,6 @@
+{{- $name := strings.TrimSpace . -}}
+{{- if eq $name "admin" -}}{{- $name = "Tao Sun" -}}{{- end -}}
+{{- $url := index site.Data.author_links $name -}}
+{{- with $url -}}<a href="{{ . }}">{{- end -}}
+{{- if eq $name "Tao Sun" -}}<strong>{{ $name }}</strong>{{- else -}}{{ $name }}{{- end -}}
+{{- with $url -}}</a>{{- end -}}

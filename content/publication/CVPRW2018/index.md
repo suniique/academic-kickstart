@@ -3,7 +3,7 @@ title: "Stacked U-Nets with Multi-output for Road Extraction"
 authors:
 - admin
 - Zehui Chen
-- Wenxiang Wen
+- Wenxiang Yang
 - Yin Wang
 date: "2018-06-16T00:00:00Z"
 doi: ""
