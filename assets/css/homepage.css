@@ -255,7 +255,7 @@ h2 {
 }
 .news-list {
   display:grid;
-  gap:14px
+  gap:6px
 }
 .news-item {
   display:grid;
@@ -291,8 +291,8 @@ h2 {
   padding-bottom:41px
 }
 .research-intro {
-  max-width:810px;
-  color:var(--muted);
+  max-width:100%;
+  color:#000;
   font-size:16px;
   margin-bottom:27px
 }
@@ -457,7 +457,6 @@ sup {
   padding-block:43px
 }
 .background-section h2 {
-  font-size:22px;
   margin-bottom:18px
 }
 .background-section p {
@@ -704,7 +703,7 @@ sup {
     font-size:12px
   }
   .news-list {
-    gap:17px
+    gap:8px
   }
   .research-intro {
     font-size:15px;
@@ -770,9 +769,6 @@ sup {
   .background-section {
     grid-template-columns:1fr;
     gap:22px
-  }
-  .background-section h2 {
-    font-size:22px
   }
   .education {
     gap:28px
@@ -929,24 +925,24 @@ h1,h2,h3,h4  {
 .intro  {
   display:grid;
   grid-template-columns:340px minmax(0,1fr);
-  gap:60px;
+  gap:48px;
   align-items:start;
-  padding:55px 0 64px;
+  padding:44px 0 48px;
 }
 .profile  {
   display:block;
   align-self:start;
-  padding-top:20px;
+  padding-top:14px;
   text-align:center;
 }
 .portrait  {
   width:200px;
   height:200px;
-  margin:0 auto 22px;
+  margin:0 auto 18px;
   border-radius:50%;
 }
 .intro h1  {
-  font-size:32px; font-weight:400; line-height:1.3; letter-spacing:0; margin:0 0 9px;
+  font-size:28px; font-weight:400; line-height:1.3; letter-spacing:0; margin:0 0 9px;
 }
 .name-divider {
   margin:0 .12em;
@@ -964,22 +960,22 @@ h1,h2,h3,h4  {
   vertical-align:baseline;
 }
 .intro-role  {
-  font:400 18px/1.5 Montserrat,Arial,sans-serif; margin:0 0 4px; color:#777;
+  font:400 15px/1.5 Montserrat,Arial,sans-serif; margin:0 0 4px; color:#777;
 }
 .profile-affiliation  {
-  font:400 18px/1.8 Montserrat,Arial,sans-serif; margin:0;
+  font:400 15px/1.7 Montserrat,Arial,sans-serif; margin:0;
 }
 .intro-copy  {
   display:block;
 }
 .biography p  {
-  font-size:17px; line-height:1.7; margin-bottom:20px;
+  font-size:15px; line-height:1.7; margin-bottom:16px;
 }
 .biography strong  {
   font-weight:500;
 }
 .social-links  {
-  justify-content:center; gap:8px 16px; margin:24px auto 0; max-width:280px;
+  justify-content:center; gap:8px 16px; margin:18px auto 0; max-width:280px;
 }
 .social-links a  {
   color:var(--accent); font-size:14px; font-weight:400;
@@ -988,16 +984,16 @@ h1,h2,h3,h4  {
   display:none;
 }
 .intro-interests  {
-  margin-top:28px;
+  margin-top:22px;
 }
 .intro-interests h2  {
-  font-size:23px; font-weight:700;
+  font-size:20px; font-weight:700;
 }
 .intro-interests ul  {
-  margin:12px 0 0; padding-left:24px;
+  margin:10px 0 0; padding-left:24px; font-size:15px;
 }
 .section  {
-  padding-block:45px;
+  padding-block:36px;
 }
 .news-section,.background-section  {
   background:var(--soft);
@@ -1027,7 +1023,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible  {
     grid-template-columns:260px minmax(0,1fr); gap:35px;
   }
   .biography p  {
-    font-size:16px;
+    font-size:15px;
   }
 }
 @media(max-width:650px)  {
@@ -1044,7 +1040,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible  {
     font-size:12px; padding-block:4px;
   }
   .intro  {
-    display:flex; flex-direction:column; gap:32px; padding:32px 0;
+    display:flex; flex-direction:column; gap:26px; padding:26px 0;
   }
   .profile  {
     width:100%; padding:0;
@@ -1053,27 +1049,27 @@ a:focus-visible,button:focus-visible,summary:focus-visible  {
     width:160px; height:160px; margin-bottom:18px;
   }
   .intro h1  {
-    font-size:30px; letter-spacing:0;
+    font-size:26px; letter-spacing:0;
   }
   .intro-role,.profile-affiliation  {
-    font-size:16px;
+    font-size:15px;
   }
   .intro-copy  {
     display:block;
   }
   .social-links  {
-    gap:14px; margin:20px auto 0; max-width:none;
+    gap:14px; margin:16px auto 0; max-width:none;
   }
   .social-links a  {
     font-size:13px;
   }
   .biography p  {
-    font-size:16px;
+    font-size:15px;
   }
   .section  {
-    padding-block:32px;
+    padding-block:28px;
   }
   .intro-interests h2  {
-    font-size:22px;
+    font-size:20px;
   }
 }
