@@ -7,7 +7,7 @@ authors:
 - Silvio Savarese
 - Konrad Schindler
 - Marc Pollefeys
-- Iro Armeni 
+- Iro Armeni
 
 date: "2025-02-25T00:00:00Z"
 # doi: "https://doi.org/10.1016/j.isprsjprs.2025.01.010"
@@ -26,6 +26,7 @@ publication: ISPRS Journal of Photogrammetry and Remote Sensing
 publication_short: In *ISPRS Journal 2025*
 venue_label: ISPRS Journal 2025
 recognition: Best Paper Award 2025
+recognition_kind: award
 doi: "10.1016/j.isprsjprs.2025.01.010"
 homepage_image: thumbnail.webp
 visual_alt: "NSS compares 3D scans of a building at different construction stages and aligns fragments despite structural changes."

@@ -15,7 +15,8 @@ publication_types: ["1"]
 publication: European Conference on Computer Vision (ECCV) 2026
 publication_short: "ECCV 2026 · Oral · Best Paper Candidate"
 venue_label: ECCV 2026
-recognition: Oral · Best Paper Candidate (top 10)
+recognition: Oral · Best Paper Candidate
+recognition_kind: award
 homepage_image: thumbnail.webp
 visual_alt: "RAP aligns multiple colored point clouds into a shared 3D scene across objects, indoor rooms, and outdoor environments."
 

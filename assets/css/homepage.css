@@ -1073,3 +1073,43 @@ a:focus-visible,button:focus-visible,summary:focus-visible  {
     font-size:20px;
   }
 }
+
+/* Venue labels get a touch more presence; award-level recognition is visually distinct from Oral/Spotlight. */
+.venue {
+  font-size:13px;
+  letter-spacing:.4px;
+}
+.recognition {
+  font-size:12px;
+  line-height:1.5;
+}
+.recognition-award, a.recognition-award {
+  background:#fdf3e4;
+  color:#9a5a10;
+}
+a.recognition-award:hover {
+  text-decoration:none;
+  background:#fbead1;
+}
+/* Research directions point at representative papers instead of restating the bio. */
+.direction-papers {
+  margin:10px 0 0;
+  font-size:13px;
+  line-height:1.6;
+  color:var(--muted);
+}
+.direction-papers a {
+  color:var(--accent);
+  font-size:13px;
+  font-weight:400;
+}
+.direction-sep {
+  margin:0 7px;
+  color:#b5bac4;
+}
+.contact-email {
+  border-bottom:0;
+}
+.contact-section h2 {
+  font-size:27px;
+}

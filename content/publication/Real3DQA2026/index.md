@@ -17,6 +17,9 @@ publication_types: ["1"]
 publication: International Conference on Learning Representations (ICLR) 2026
 publication_short: ICLR 2026
 venue_label: ICLR 2026
+recognition: "Best Paper Runner-Up @ CVPR 2026 3D-LLM/VLA Workshop"
+recognition_kind: award
+recognition_url: https://3d-llm-vla.github.io/
 equal_contribution: true
 abstract: "Text-only models can match or surpass 3D language models on SQA3D, suggesting that language shortcuts can obscure weaknesses in spatial reasoning. Real-3DQA filters easy-to-guess questions and introduces a taxonomy of 3D reasoning tasks. A 3D-reweighted training objective encourages models to use visual geometry and improves spatial reasoning performance."
 summary: "Exposing language shortcuts in 3D reasoning benchmarks and introducing Real-3DQA to test whether models actually use visual geometry."

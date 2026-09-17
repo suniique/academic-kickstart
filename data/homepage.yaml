@@ -1,10 +1,7 @@
 news:
   - date: Sep 2026
     datetime: "2026-09"
-    text: "[Register Any Point](https://register-any-point.github.io/) is an **ECCV 2026 Best Paper Award Candidate (top 10)** and an oral presentation."
-  - date: Jun 2026
-    datetime: "2026-06"
-    text: "[Register Any Point](https://register-any-point.github.io/) was accepted to **ECCV 2026**."
+    text: "[Register Any Point](https://register-any-point.github.io/), accepted to **ECCV 2026** in June, was selected as a **Best Paper Award Candidate (top 10)** and an oral presentation."
   - date: Jun 2026
     datetime: "2026-06"
     text: "I joined NVIDIA **[Cosmos Lab](https://research.nvidia.com/labs/cosmos-lab/)** as a research intern, working on world-action models for robot planning and control."
@@ -44,7 +41,22 @@ news:
 research:
   - title: 3D world understanding
     text: Learning geometry and correspondences to register, reconstruct, and understand scenes across sensors, scales, and time.
+    papers:
+      - title: Nothing Stands Still
+        url: https://www.nothing-stands-still.com/
+      - title: Real-3DQA
+        url: https://real-3dqa.github.io/
   - title: Generative geometry
     text: Formulating point cloud registration and shape assembly as generation, capturing structure, symmetry, and uncertainty.
+    papers:
+      - title: Rectified Point Flow
+        url: https://rectified-pointflow.github.io/
+      - title: Register Any Point
+        url: https://register-any-point.github.io/
   - title: World models for action
     text: Connecting world-action models and vision-language-action models with robot planning, control, and assembly.
+    papers:
+      - title: Energy-based Compositional Diffusion Planning
+        url: https://github.com/GradientSpaces/ECD
+      - title: NVIDIA Cosmos
+        url: https://research.nvidia.com/labs/cosmos-lab/

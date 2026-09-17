@@ -11,7 +11,7 @@
     {{ with .Params.homepage_animation }}<button class="motion-toggle" type="button" hidden aria-label="Play animation for {{ $paper.Title }}" aria-pressed="false">Play animation</button>{{ end }}
   </div>
   <div class="paper-content">
-    <div class="paper-meta"><span class="venue">{{ .Params.venue_label | default (.Params.publication_short | markdownify | plainify) }}</span>{{ with .Params.recognition }}<span class="recognition">{{ . }}</span>{{ end }}</div>
+    <div class="paper-meta"><span class="venue">{{ .Params.venue_label | default (.Params.publication_short | markdownify | plainify) }}</span>{{ with .Params.recognition }}{{ $class := "recognition" }}{{ if eq $paper.Params.recognition_kind "award" }}{{ $class = "recognition recognition-award" }}{{ end }}{{ if $paper.Params.recognition_url }}<a class="{{ $class }}" href="{{ $paper.Params.recognition_url }}">{{ . }}</a>{{ else }}<span class="{{ $class }}">{{ . }}</span>{{ end }}{{ end }}</div>
     <h4 id="paper-{{ .File.ContentBaseName }}-{{ .File.UniqueID }}"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
     <p class="authors">{{ with .Params.authors_display }}{{ . | markdownify }}{{ else }}{{ range $index, $name := .Params.authors }}{{ if $index }}, {{ end }}{{ partial "homepage/author.html" $name }}{{ if and $paper.Params.equal_contribution (lt $index 2) }}<sup>*</sup>{{ end }}{{ end }}{{ with .Params.authors_including }} (including {{ range $index, $name := . }}{{ if $index }}, {{ end }}{{ partial "homepage/author.html" $name }}{{ end }}){{ end }}{{ end }}</p>
     <p class="paper-summary">{{ .Params.summary }}</p>

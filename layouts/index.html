@@ -95,10 +95,9 @@
 
     <section id="research" class="section research-section" aria-labelledby="research-title">
       <div class="section-heading"><h2 id="research-title">Research</h2></div>
-      <p class="research-intro">I study how machines can understand the 3D world and use that understanding to act. My work connects geometric learning, generative models, and robot planning.</p>
       <div class="research-directions">
         {{ range $i, $direction := site.Data.homepage.research }}
-        <div class="direction"><span class="direction-number" aria-hidden="true">0{{ add $i 1 }}</span><h3>{{ .title }}</h3><p>{{ .text }}</p></div>
+        <div class="direction"><span class="direction-number" aria-hidden="true">0{{ add $i 1 }}</span><h3>{{ .title }}</h3><p>{{ .text }}</p>{{ with .papers }}<p class="direction-papers">{{ range $j, $paper := . }}{{ if $j }}<span class="direction-sep" aria-hidden="true">·</span>{{ end }}<a href="{{ $paper.url }}">{{ $paper.title }}</a>{{ end }}</p>{{ end }}</div>
         {{ end }}
       </div>
     </section>
@@ -120,7 +119,7 @@
 
     <section id="contact" class="section contact-section" aria-labelledby="contact-title"><div><p class="eyebrow">Get in touch</p><h2 id="contact-title">Let’s talk research.</h2><p>I’m happy to connect about 3D vision, world models, and robotics.</p></div><a class="contact-email" href="mailto:taosun@stanford.edu">taosun@stanford.edu <span aria-hidden="true">↗</span></a></section>
   </main>
-  <footer class="page-width footer"><span>© {{ now.Year }} Tao Sun</span><span>Last updated September 2026</span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
+  <footer class="page-width footer"><span>© {{ now.Year }} Tao Sun</span><span>Last updated {{ site.Lastmod.Format "January 2006" }}</span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
   {{ $script := resources.Get "js/homepage.js" | minify | fingerprint }}
   <script src="{{ $script.RelPermalink }}" defer></script>
 </body>
