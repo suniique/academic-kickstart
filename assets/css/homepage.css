@@ -487,6 +487,28 @@ sup {
 .resource-link span {
   color:var(--accent)
 }
+.supervision-title {
+  margin-top:30px
+}
+.supervision {
+  list-style:none;
+  margin:0;
+  padding:0
+}
+.supervision li {
+  border-bottom:1px solid var(--line);
+  padding:10px 0;
+  font-size:14px;
+  line-height:1.6
+}
+.supervision li > a {
+  display:block;
+  color:var(--ink)
+}
+.supervision span {
+  font-size:13px;
+  color:var(--muted)
+}
 .contact-section {
   display:flex;
   align-items:center;

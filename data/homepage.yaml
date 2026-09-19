@@ -62,3 +62,11 @@ research:
         url: https://github.com/GradientSpaces/ECD
       - title: NVIDIA Cosmos
         url: https://research.nvidia.com/labs/cosmos-lab/
+
+supervision:
+  - name: Kevin Qu
+    url: https://kevinqu7.github.io/
+    note: "M.Sc. student at ETH Zurich (now CS Ph.D. student in [Siyu Tang's group](https://vlg.inf.ethz.ch/) at ETH Zurich)"
+  - name: Nicolas Dickenmann
+    url: https://linkedin.com/in/nicolasdickenmann
+    note: "M.Sc. student at ETH Zurich"
