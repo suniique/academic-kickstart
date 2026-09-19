@@ -107,7 +107,10 @@
       <p class="publication-note">* Equal contribution</p>
       {{ range (where site.RegularPages "Section" "publication").GroupByDate "2006" }}
       <div class="publication-year"><h3>{{ .Key }}</h3><div class="year-line"></div></div>
-      {{ range .Pages }}{{ partial "homepage/publication.html" . }}{{ end }}
+      {{/* Preprints (publication type 3) are listed after the year's published papers. */}}
+      {{ $preprints := where .Pages "Params.publication_types" "intersect" (slice "3") }}
+      {{ range (.Pages | complement $preprints) }}{{ partial "homepage/publication.html" . }}{{ end }}
+      {{ range $preprints }}{{ partial "homepage/publication.html" . }}{{ end }}
       {{ end }}
       <p class="archive-link"><a href="{{ "publication/" | relURL }}">Browse the publication archive <span aria-hidden="true">↗</span></a></p>
     </section>
