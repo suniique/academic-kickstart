@@ -503,7 +503,8 @@ sup {
 }
 .supervision li > a {
   display:block;
-  color:var(--ink)
+  width:fit-content;
+  color:var(--accent)
 }
 .supervision span {
   font-size:13px;
