@@ -505,6 +505,10 @@ sup {
   font-size:14px;
   color:var(--muted)
 }
+.supervision .supervision-period {
+  margin-left:10px;
+  font-weight:300
+}
 .contact-section {
   display:flex;
   align-items:center;
