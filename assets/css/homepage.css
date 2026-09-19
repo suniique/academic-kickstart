@@ -501,11 +501,6 @@ sup {
   font-size:14px;
   line-height:1.6
 }
-.supervision li > a {
-  display:block;
-  width:fit-content;
-  color:var(--accent)
-}
 .supervision span {
   font-size:14px;
   color:var(--muted)

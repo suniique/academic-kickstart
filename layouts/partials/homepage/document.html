@@ -121,7 +121,7 @@
     <section id="background" class="section background-section" aria-label="Background and resources">
       <div><h2>Background</h2><p>Previously at <a href="https://seed.bytedance.com/en/">ByteDance Seed Lab</a>, working on LLM post-training and reasoning, and the <a href="https://vision.ee.ethz.ch/">Computer Vision Lab at ETH Zurich</a>, working on scene understanding and multitask learning.</p><div class="education"><p><strong>M.Sc. in Computer Science</strong><br>ETH Zurich</p><p><strong>B.Sc. in Computer Engineering</strong><br>Tongji University</p></div>
         {{ if $preview }}<h2 class="supervision-title">Supervision</h2>
-        <ul class="supervision">{{ range site.Data.homepage.supervision }}<li><a href="{{ .url }}">{{ .name }}</a><span>{{ .note | markdownify }}</span></li>{{ end }}</ul>{{ end }}
+        <ul class="supervision">{{ range site.Data.homepage.supervision }}<li><div><a href="{{ .url }}">{{ .name }}</a>{{ with .period }} <span>({{ . }})</span>{{ end }}</div><span>{{ .note | markdownify }}</span></li>{{ end }}</ul>{{ end }}
       </div>
       <div class="resources"><h2>Open resources</h2><p>Lecture notes from my time at ETH Zurich.</p>{{ range where site.RegularPages "Section" "project" }}<a class="resource-link" href="{{ .Params.external_link }}">{{ .Title }}<span aria-hidden="true">↗</span></a>{{ end }}</div>
     </section>
