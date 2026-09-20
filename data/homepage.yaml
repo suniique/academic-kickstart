@@ -70,7 +70,7 @@ supervision:
     public: true
     note: "M.Sc. student at ETH Zurich (now CS Ph.D. student in [Siyu Tang's group](https://vlg.inf.ethz.ch/) at ETH Zurich)"
   - name: Nicolas Dickenmann
-    url: https://linkedin.com/in/nicolasdickenmann
+    url: https://nicolasdickenmann.com
     period: 2025–now
     public: true
     note: "M.Sc. student at ETH Zurich"
