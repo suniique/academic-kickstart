@@ -72,4 +72,5 @@ supervision:
   - name: Nicolas Dickenmann
     url: https://linkedin.com/in/nicolasdickenmann
     period: 2025–now
+    public: true
     note: "M.Sc. student at ETH Zurich"

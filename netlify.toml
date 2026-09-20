@@ -27,6 +27,11 @@
 
 # Retired preview pages redirect to the homepage.
 [[redirects]]
+  from = "/preview/20260919/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
   from = "/preview/20260919-intro/*"
   to = "/"
   status = 301
