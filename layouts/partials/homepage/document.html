@@ -1,59 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  {{ $author := site.GetPage "authors/admin" }}
-  {{ $portrait := $author.Resources.GetMatch "avatar.jpg" }}
-  {{/* Shared by the homepage and /preview/ pages (front matter: homepage_preview: true). */}}
-  {{ $preview := .Params.homepage_preview }}
-  {{ $seoTitle := "Tao Sun (孙韬) | Stanford · 3D Vision & Robotics" }}
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Tao Sun is a PhD candidate at Stanford University working on 3D vision, generative geometry, and world-action models for robotics.">
-  <meta name="author" content="Tao Sun">
-  <meta property="og:site_name" content="Tao Sun">
-  <meta property="og:title" content="{{ $seoTitle }}">
-  <meta property="og:type" content="website">
-  <meta property="og:description" content="3D vision, generative geometry, and world-action models for robotics.">
-  <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:image" content="{{ $portrait.Permalink }}">
-  <meta property="og:image:width" content="{{ $portrait.Width }}">
-  <meta property="og:image:height" content="{{ $portrait.Height }}">
-  <meta property="og:image:alt" content="Tao Sun (孙韬), PhD candidate at Stanford University">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{{ $seoTitle }}">
-  <meta name="twitter:description" content="3D vision, generative geometry, and world-action models for robotics.">
-  <meta name="twitter:image" content="{{ $portrait.Permalink }}">
-  <meta name="twitter:image:alt" content="Tao Sun (孙韬), PhD candidate at Stanford University">
-  {{ partial "homepage/profile-schema.html" (dict "page" . "author" $author "portrait" $portrait) }}
-  <meta name="theme-color" content="#2962ff">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  {{ if $preview }}<meta name="robots" content="noindex, nofollow">{{ end }}
-  <link rel="canonical" href="{{ site.Home.Permalink }}">
-  <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}?v=steps">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ "img/icon-32.png" | relURL }}?v=steps">
-  <link rel="apple-touch-icon" sizes="192x192" href="{{ "img/icon-192.png" | relURL }}?v=steps">
-  {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="Tao Sun">{{ end }}
-  {{ $style := resources.Get "css/homepage.css" | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-  <title>{{ $seoTitle }}</title>
-  {{ if not $preview }}{{ partial "marketing/google_analytics" . }}{{ partial "marketing/goatcounter" . }}{{ end }}
-</head>
+{{ $preview := .Params.homepage_preview }}
+{{/* Shared by the homepage and /preview/ pages (front matter: homepage_preview: true). */}}
+{{ partial "homepage/head.html" (dict "page" . "title" "Tao Sun (孙韬) | Stanford · 3D Vision & Robotics" "description" "Tao Sun is a PhD candidate at Stanford University working on 3D vision, generative geometry, and world-action models for robotics." "canonical" site.Home.Permalink "noindex" $preview "profileSchema" true) }}
 <body class="homepage" id="top">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="page-width header-inner">
-      <a class="wordmark" href="#about" aria-label="Tao Sun, home">Tao Sun</a>
-      <nav aria-label="Main navigation">
-        <a href="#about" aria-current="location">Home</a>
-        <a href="#updates">News</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+  {{ partial "homepage/site-header.html" (dict "prefix" "") }}
 
   <main id="main" class="page-width">
     {{ $author := site.GetPage "authors/admin" }}
@@ -132,7 +84,7 @@
 
     <section id="contact" class="section contact-section" aria-labelledby="contact-title"><div><p class="eyebrow">Get in touch</p><h2 id="contact-title">Let’s talk research.</h2><p>I’m happy to connect about 3D vision, world models, and robotics.</p></div><a class="contact-email" href="mailto:taosun@stanford.edu">taosun@stanford.edu <span aria-hidden="true">↗</span></a></section>
   </main>
-  <footer class="page-width footer"><span>© {{ now.Year }} Tao Sun</span><span>Last updated {{ site.Lastmod.Format "January 2006" }}<span class="view-count" data-goatcounter-total hidden></span></span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
+  {{ partial "homepage/site-footer.html" . }}
   {{ $script := resources.Get "js/homepage.js" | minify | fingerprint }}
   <script src="{{ $script.RelPermalink }}" defer></script>
 </body>

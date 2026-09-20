@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "homepage/head.html" (dict "page" . "title" "Publications | Tao Sun" "description" "Publications by Tao Sun on 3D vision, generative geometry, and world-action models for robotics.") }}
+<body class="homepage inner-page" id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  {{ partial "homepage/site-header.html" (dict "prefix" site.Home.RelPermalink) }}
+  <main id="main" class="page-width">
+    <section class="section publications-section pub-archive" aria-labelledby="publications-title">
+      <div class="section-heading"><h1 id="publications-title" class="pub-title">Publications</h1><a class="section-link" href="https://scholar.google.com/citations?user=x1O-cHYAAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a></div>
+      <p class="publication-note">* Equal contribution</p>
+      {{ range .RegularPages.GroupByDate "2006" }}
+      <div class="publication-year"><h3>{{ .Key }}</h3><div class="year-line"></div></div>
+      {{ $preprints := where .Pages "Params.publication_types" "intersect" (slice "3") }}
+      {{ range (.Pages | complement $preprints) }}{{ partial "homepage/publication.html" . }}{{ end }}
+      {{ range $preprints }}{{ partial "homepage/publication.html" . }}{{ end }}
+      {{ end }}
+    </section>
+  </main>
+  {{ partial "homepage/site-footer.html" . }}
+  {{ $script := resources.Get "js/homepage.js" | minify | fingerprint }}
+  <script src="{{ $script.RelPermalink }}" defer></script>
+</body>
+</html>

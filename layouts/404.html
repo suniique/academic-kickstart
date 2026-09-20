@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "homepage/head.html" (dict "page" . "title" "Page not found | Tao Sun" "description" "This page does not exist." "canonical" site.Home.Permalink "noindex" true) }}
+<body class="homepage inner-page" id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  {{ partial "homepage/site-header.html" (dict "prefix" site.Home.RelPermalink) }}
+  <main id="main" class="page-width">
+    <section class="not-found">
+      <p class="eyebrow">404</p>
+      <h1 class="pub-title">This page doesn’t exist.</h1>
+      <p>It may have moved when the site was redesigned.</p>
+      <p><a href="{{ site.Home.RelPermalink }}">Go to the homepage <span aria-hidden="true">→</span></a> · <a href="{{ site.Home.RelPermalink }}#publications">Browse publications</a></p>
+    </section>
+  </main>
+  {{ partial "homepage/site-footer.html" . }}
+</body>
+</html>

@@ -1,0 +1,41 @@
+{{/* Shared <head>. dict: page, title, description, canonical, noindex, profileSchema, ogType, image (resource, optional). */}}
+{{ $page := .page }}
+{{ $author := site.GetPage "authors/admin" }}
+{{ $portrait := $author.Resources.GetMatch "avatar.jpg" }}
+{{ $card := resources.Get "img/social-card.png" }}
+{{ $image := .image | default $card }}
+{{ $canonical := .canonical | default $page.Permalink }}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ .description }}">
+  <meta name="author" content="Tao Sun">
+  <meta property="og:site_name" content="Tao Sun">
+  <meta property="og:title" content="{{ .title }}">
+  <meta property="og:type" content="{{ .ogType | default "website" }}">
+  <meta property="og:description" content="{{ .description }}">
+  <meta property="og:url" content="{{ $canonical }}">
+  <meta property="og:image" content="{{ $image.Permalink }}">
+  <meta property="og:image:width" content="{{ $image.Width }}">
+  <meta property="og:image:height" content="{{ $image.Height }}">
+  <meta property="og:image:alt" content="{{ .imageAlt | default "Tao Sun (孙韬), PhD candidate at Stanford University — 3D vision, generative geometry, and world-action models for robotics" }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ .title }}">
+  <meta name="twitter:description" content="{{ .description }}">
+  <meta name="twitter:image" content="{{ $image.Permalink }}">
+  {{ if .profileSchema }}{{ partial "homepage/profile-schema.html" (dict "page" $page "author" $author "portrait" $portrait) }}{{ end }}
+  <meta name="theme-color" content="#2962ff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  {{ if .noindex }}<meta name="robots" content="noindex, nofollow">{{ end }}
+  <link rel="canonical" href="{{ $canonical }}">
+  <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}?v=steps">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "img/icon-32.png" | relURL }}?v=steps">
+  <link rel="apple-touch-icon" sizes="192x192" href="{{ "img/icon-192.png" | relURL }}?v=steps">
+  {{ with $page.OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="Tao Sun">{{ end }}
+  {{ $style := resources.Get "css/homepage.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  <title>{{ .title }}</title>
+  {{ if not .noindex }}{{ partial "marketing/google_analytics" $page }}{{ partial "marketing/goatcounter" $page }}{{ end }}
+</head>

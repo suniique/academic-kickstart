@@ -28,7 +28,8 @@ links:
 - name: Project
   url: https://kevinqu7.github.io/famos
 homepage_image: thumbnail.webp
-visual_alt: "FAMOS lifts casual captures of cabinets in different articulation states to partial point clouds and predicts colored movable parts and joint axes."
+homepage_animation: preview.gif
+visual_alt: "Sparse input views of a stove cabinet and a vanity desk next to FAMOS predictions: point clouds with colored movable parts and joint axes, animated through their articulation."
 image:
   caption: "FAMOS predicts movable-part segmentation and joint parameters from sparse observations."
   focal_point: Center

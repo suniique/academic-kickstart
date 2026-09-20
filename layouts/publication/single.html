@@ -1,71 +1,32 @@
-{{- define "main" -}}
-
-<div class="pub">
-
-  {{ partial "page_header.html" . }}
-
-  <div class="article-container">
-
-    {{ with .Params.recognition }}
-    <p class="pub-recognition"><strong>{{ . }}</strong></p>
-    {{ end }}
-
-    {{ if .Params.abstract }}
-    <h3>{{ i18n "abstract" }}</h3>
-    <p class="pub-abstract">{{ .Params.abstract | markdownify }}</p>
-    {{ end }}
-
-    {{ if and .Params.publication_types (ne (index .Params.publication_types 0) "0") }}
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">{{ i18n "publication_type" }}</div>
-          <div class="col-12 col-md-9">
-            {{ $pub_types := partial "functions/get_pub_types" $ }}
-            {{ range $index, $pubtype := .Params.publication_types }}
-            <a href="{{ (site.GetPage "section" "publication").RelPermalink }}#{{ . | urlize }}">
-              {{ index $pub_types (int .) }}
-            </a>
-            {{ end }}
-          </div>
-        </div>
+{{ $paper := . }}
+{{ $visual := or (.Resources.GetMatch "featured.*") (.Resources.GetMatch (.Params.homepage_image | default "thumbnail.*")) }}
+{{ $description := .Params.summary | default (.Params.abstract | plainify | truncate 200) }}
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "homepage/head.html" (dict "page" . "title" (printf "%s | Tao Sun" .Title) "description" $description "ogType" "article") }}
+<body class="homepage inner-page" id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  {{ partial "homepage/site-header.html" (dict "prefix" site.Home.RelPermalink) }}
+  <main id="main" class="page-width">
+    <article class="pub-page">
+      <p class="pub-back"><a href="{{ site.Home.RelPermalink }}#publications"><span aria-hidden="true">←</span> All publications</a></p>
+      <div class="paper-meta"><span class="venue{{ if in (.Params.publication_types | default slice) "3" }} venue-preprint{{ end }}">{{ .Params.venue_label | default (.Params.publication_short | markdownify | plainify) }}</span>{{ with .Params.recognition }}{{ $class := "recognition" }}{{ if eq $paper.Params.recognition_kind "award" }}{{ $class = "recognition recognition-award" }}{{ end }}{{ if $paper.Params.recognition_url }}<a class="{{ $class }}" href="{{ $paper.Params.recognition_url }}">{{ . }}</a>{{ else }}<span class="{{ $class }}">{{ . }}</span>{{ end }}{{ end }}</div>
+      <h1 class="pub-title">{{ .Title }}</h1>
+      <p class="authors">{{ with .Params.authors_display }}{{ . | markdownify }}{{ else }}{{ range $index, $name := .Params.authors }}{{ if $index }}, {{ end }}{{ partial "homepage/author.html" $name }}{{ if and $paper.Params.equal_contribution (lt $index 2) }}<sup>*</sup>{{ end }}{{ end }}{{ with .Params.authors_including }} (including {{ range $index, $name := . }}{{ if $index }}, {{ end }}{{ partial "homepage/author.html" $name }}{{ end }}){{ end }}{{ end }}</p>
+      {{ if .Params.equal_contribution }}<p class="publication-note">* Equal contribution</p>{{ end }}
+      {{ with .Params.publication }}<p class="pub-venue-full">{{ . | markdownify }}</p>{{ end }}
+      <div class="paper-links">
+        {{ with .Params.url_pdf }}{{ partial "homepage/paper-link.html" (dict "paper" $paper "url" . "label" "Paper") }}{{ end }}
+        {{ with .Params.url_code }}{{ partial "homepage/paper-link.html" (dict "paper" $paper "url" . "label" "Code") }}{{ end }}
+        {{ range .Params.links }}{{ partial "homepage/paper-link.html" (dict "paper" $paper "url" .url "label" .name) }}{{ end }}
+        {{ with .Resources.GetMatch "cite.bib" }}<a href="{{ .RelPermalink }}">BibTeX</a>{{ end }}
       </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-    {{ end }}
-
-    {{ if .Params.publication }}
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">{{ i18n "publication" }}</div>
-          <div class="col-12 col-md-9">{{ .Params.publication | markdownify }}</div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-    {{ end }}
-
-    <div class="space-below"></div>
-
-    <div class="article-style">{{ .Content }}</div>
-
-    {{ partial "tags.html" . }}
-    {{ partial "page_author.html" . }}
-
-    {{ partial "comments" . }}
-
-  </div>
-</div>
-
-{{ if site.Params.section_pager }}
-<div class="article-container article-widget">
-  {{ partial "section_pager.html" . }}
-</div>
-{{ end }}
-
-{{- end -}}
+      {{ with $visual }}<figure class="pub-figure"><img src="{{ .RelPermalink }}" alt="{{ $paper.Params.visual_alt | default $paper.Params.image.caption | default $paper.Title }}" loading="lazy" decoding="async">{{ with $paper.Params.image.caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}</figure>{{ end }}
+      {{ with .Params.abstract }}<h2>Abstract</h2><p class="pub-abstract">{{ . | markdownify }}</p>{{ end }}
+      {{ with .Content }}<div class="pub-body">{{ . }}</div>{{ end }}
+      {{ with .Resources.GetMatch "cite.bib" }}<h2>BibTeX</h2><pre class="pub-bibtex"><code>{{ .Content }}</code></pre>{{ end }}
+    </article>
+  </main>
+  {{ partial "homepage/site-footer.html" . }}
+</body>
+</html>

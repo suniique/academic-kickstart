@@ -1,0 +1,13 @@
+{{/* dict: prefix — "" on the homepage, the home URL on inner pages so the anchors resolve. */}}
+  <header class="site-header">
+    <div class="page-width header-inner">
+      <a class="wordmark" href="{{ .prefix }}#about" aria-label="Tao Sun, home">Tao Sun</a>
+      <nav aria-label="Main navigation">
+        <a href="{{ .prefix }}#about"{{ if not .prefix }} aria-current="location"{{ end }}>Home</a>
+        <a href="{{ .prefix }}#updates">News</a>
+        <a href="{{ .prefix }}#research">Research</a>
+        <a href="{{ .prefix }}#publications">Publications</a>
+        <a href="{{ .prefix }}#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
