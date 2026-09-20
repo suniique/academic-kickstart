@@ -72,7 +72,8 @@
         </div>
       </aside>
       <div class="intro-copy">
-        <div class="biography">{{ $author.Content }}</div>
+        {{/* A preview page with body text previews a new biography. */}}
+        <div class="biography">{{ if and $preview .Content }}{{ .Content }}{{ else }}{{ $author.Content }}{{ end }}</div>
         <div class="intro-interests"><h2>Interests</h2><ul>{{ range $author.Params.interests }}<li>{{ . }}</li>{{ end }}</ul></div>
       </div>
     </section>
