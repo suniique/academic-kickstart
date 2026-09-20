@@ -253,3 +253,8 @@ plugins_js  = []
 [marketing]
   google_analytics = "" #"UA-149441313-1"
   google_tag_manager = ""
+  # GoatCounter site code (the "mycode" in https://mycode.goatcounter.com). Empty disables tracking.
+  goatcounter = "suniique"
+  # Show the total view count in the homepage footer. Requires the GoatCounter
+  # setting "Allow adding visitor counts on your website" to be enabled.
+  goatcounter_public_count = false

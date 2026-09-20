@@ -1,0 +1,21 @@
+{{/* Cookie-free analytics via GoatCounter; only loads on production builds. */}}
+{{ $code := site.Params.marketing.goatcounter | default "" }}
+{{ if and $code (eq (getenv "HUGO_ENV") "production") }}
+<script data-goatcounter="https://{{ $code }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+{{ if site.Params.marketing.goatcounter_public_count }}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var target = document.querySelector('[data-goatcounter-total]');
+    if (!target) return;
+    fetch('https://{{ $code }}.goatcounter.com/counter/TOTAL.json')
+      .then(function (response) { return response.ok ? response.json() : null; })
+      .then(function (data) {
+        if (!data || !data.count) return;
+        target.textContent = ' · ' + data.count + ' views';
+        target.hidden = false;
+      })
+      .catch(function () {});
+  });
+</script>
+{{ end }}
+{{ end }}
