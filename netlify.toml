@@ -24,3 +24,9 @@
   for = "index.xml"
   [headers.values]
     Content-Type = "application/rss+xml"
+
+# Retired preview pages redirect to the homepage.
+[[redirects]]
+  from = "/preview/20260919-intro/*"
+  to = "/"
+  status = 301
