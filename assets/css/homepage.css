@@ -855,25 +855,6 @@ sup {
   position:relative;
   min-width:0
 }
-.motion-toggle {
-  position:absolute;
-  bottom:8px;
-  right:8px;
-  padding:5px 9px;
-  border:1px solid #d5d9df;
-  border-radius:4px;
-  background:rgba(255,255,255,.95);
-  color:var(--ink);
-  font:500 12px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  cursor:pointer
-}
-.motion-toggle:hover {
-  border-color:var(--accent);
-  color:var(--accent)
-}
-.motion-toggle[hidden] {
-  display:none
-}
 .archive-link {
   margin:28px 0 0;
   font-size:14px

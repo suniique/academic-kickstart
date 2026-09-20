@@ -8,7 +8,6 @@
     <a class="paper-visual" href="{{ $project }}" aria-label="{{ .Title }} — project or paper details">
       {{ with $visual }}<img src="{{ .RelPermalink }}" alt="{{ $paper.Params.visual_alt | default $paper.Params.image.caption | default $paper.Title }}" width="760" height="450" loading="lazy" decoding="async" {{ with $paper.Params.homepage_animation }}{{ $animation := $paper.Resources.GetMatch . }}{{ with $animation }}data-motion="{{ .RelPermalink }}"{{ end }}{{ end }}>{{ end }}
     </a>
-    {{ with .Params.homepage_animation }}<button class="motion-toggle" type="button" hidden aria-label="Play animation for {{ $paper.Title }}" aria-pressed="false">Play animation</button>{{ end }}
   </div>
   <div class="paper-content">
     <div class="paper-meta"><span class="venue{{ if in (.Params.publication_types | default slice) "3" }} venue-preprint{{ end }}">{{ .Params.venue_label | default (.Params.publication_short | markdownify | plainify) }}</span>{{ with .Params.recognition }}{{ $class := "recognition" }}{{ if eq $paper.Params.recognition_kind "award" }}{{ $class = "recognition recognition-award" }}{{ end }}{{ if $paper.Params.recognition_url }}<a class="{{ $class }}" href="{{ $paper.Params.recognition_url }}">{{ . }}</a>{{ else }}<span class="{{ $class }}">{{ . }}</span>{{ end }}{{ end }}</div>

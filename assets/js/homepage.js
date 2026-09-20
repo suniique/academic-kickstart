@@ -1,4 +1,4 @@
-// Original research GIFs have a static, no-JavaScript fallback and a pause control.
+// Research GIFs autoplay over a static, no-JavaScript fallback; reduced-motion users keep the still image.
 const navigationLinks = [...document.querySelectorAll('.site-header nav a')];
 const navigationSections = navigationLinks.map((link) => document.querySelector(link.getAttribute('href')));
 const updateNavigation = () => {
@@ -15,28 +15,15 @@ window.addEventListener('scroll', updateNavigation, { passive: true });
 updateNavigation();
 
 const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
-const animations = [...document.querySelectorAll(".paper-media")].flatMap((media) => {
-  const image = media.querySelector("img[data-motion]");
-  const button = media.querySelector(".motion-toggle");
-  if (!image || !button) return [];
-
+const animations = [...document.querySelectorAll(".paper-media img[data-motion]")].map((image) => {
   const poster = image.getAttribute("src");
-  const title = media.closest("article").querySelector("h4").textContent;
-  let playing = false;
-  const setPlaying = (next) => {
-    playing = next;
+  const setPlaying = (playing) => {
     image.src = playing ? image.dataset.motion : poster;
-    button.textContent = playing ? "Pause animation" : "Play animation";
-    button.setAttribute("aria-label", `${playing ? "Pause" : "Play"} animation for ${title}`);
-    button.setAttribute("aria-pressed", String(playing));
   };
-
-  button.hidden = false;
   setPlaying(!motionPreference.matches);
-  button.addEventListener("click", () => setPlaying(!playing));
-  return [{ setPlaying }];
+  return { setPlaying };
 });
 
 motionPreference.addEventListener("change", (event) => {
-  if (event.matches) animations.forEach((animation) => animation.setPlaying(false));
+  animations.forEach((animation) => animation.setPlaying(!event.matches));
 });
