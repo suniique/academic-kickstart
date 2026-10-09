@@ -13,6 +13,8 @@ Follow-up searches included LinkedIn, paper/project sources, and author affiliat
 
 ## Matching sources
 
+- ARC authors (checked October 8, 2026): [Gokul Puthumanaillam](https://gokulp01.github.io/), [Elie Aljalbout](https://eliealjalbout.github.io/), [Moritz Reuss](https://mbreuss.github.io/), [Zhaoshuo Li](https://mli0603.github.io/), [Ankit Goyal](https://imankgoyal.github.io/), and [Jenai Xuning Yang](https://www.xuningyang.com/) use their personal research homepages; [Fabio Ramos](https://research.nvidia.com/person/fabio-ramos) uses his NVIDIA research profile. Tao Sun retains his existing homepage link. Zhaoshuo Li's homepage uses the name Max Zhaoshuo Li, consistent with his [NVIDIA profile](https://research.nvidia.com/person/max-zhaoshuo-li).
+
 - Zehui Chen's [homepage](https://lovesnowbest.site/) was explicitly confirmed by Tao.
 - Yin Wang's old Michigan homepage returns 404. His [LinkedIn profile](https://www.linkedin.com/in/yin-wang-8a3087b/) explicitly lists *Leveraging Crowdsourced GPS Data for Road Extraction From Aerial Imagery* (CVPR 2019) and the CVPR DeepGlobe Competition award, confirming the match. Used LinkedIn as requested.
 

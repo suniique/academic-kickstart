@@ -58,6 +58,8 @@ research:
   - title: World models for action
     text: Connecting world-action models and vision-language-action models with robot planning, control, and assembly.
     papers:
+      - title: ARC
+        url: /publication/arc2026/
       - title: Energy-based Compositional Diffusion Planning
         url: https://github.com/GradientSpaces/ECD
       - title: NVIDIA Cosmos
