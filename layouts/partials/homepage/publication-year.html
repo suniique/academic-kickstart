@@ -1,0 +1,5 @@
+<div class="publication-year"><h3>{{ .Key }}</h3><div class="year-line"></div></div>
+{{/* Preprints (publication type 3) are listed after the year's published papers. */}}
+{{ $preprints := where .Pages "Params.publication_types" "intersect" (slice "3") }}
+{{ range (.Pages | complement $preprints) }}{{ partial "homepage/publication.html" . }}{{ end }}
+{{ range $preprints }}{{ partial "homepage/publication.html" . }}{{ end }}
