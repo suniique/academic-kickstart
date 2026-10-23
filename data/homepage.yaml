@@ -63,25 +63,9 @@ research:
       - title: Energy-based Compositional Diffusion Planning
         url: https://github.com/GradientSpaces/ECD
       - title: AssembleNIST
-        url: https://github.com/suniique/assembly-nist
+        url: /code/assemblenist/
       - title: NVIDIA Cosmos
         url: https://research.nvidia.com/labs/cosmos-lab/
-
-code:
-  - id: assemblenist
-    title: "AssembleNIST: One Policy for All NIST Board Assemblies"
-    label: Code · 2026
-    url: https://github.com/suniique/assembly-nist
-    image: img/assemblenist/featured.webp
-    animation: img/assemblenist/preview.webp
-    alt: A simulated Franka arm assembling parts on the NIST Assembly Task Board
-    authors: [Tao Sun]
-    summary: "An open-source implementation of [AlphaNIST](https://alpha-nist.github.io/) in MuJoCo. One RL policy assembles all 20 parts of the NIST task board with 98.7% success."
-    links:
-      - name: Code
-        url: https://github.com/suniique/assembly-nist
-      - name: Videos
-        url: https://github.com/suniique/assembly-nist/tree/main/docs/videos
 
 supervision:
   - name: Kevin Qu

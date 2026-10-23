@@ -9,7 +9,9 @@
   {{ partial "homepage/site-header.html" (dict "prefix" site.Home.RelPermalink) }}
   <main id="main" class="page-width">
     <article class="pub-page">
-      <p class="pub-back"><a href="{{ site.Home.RelPermalink }}#publications"><span aria-hidden="true">←</span> All publications</a></p>
+      {{/* Code pages (content/code/) reuse this template and link back to the homepage's Open source section. */}}
+      {{ $back := cond (eq .Section "code") (dict "anchor" "code" "label" "Open source") (dict "anchor" "publications" "label" "All publications") }}
+      <p class="pub-back"><a href="{{ site.Home.RelPermalink }}#{{ $back.anchor }}"><span aria-hidden="true">←</span> {{ $back.label }}</a></p>
       <div class="paper-meta"><span class="venue{{ if in (.Params.publication_types | default slice) "3" }} venue-preprint{{ end }}">{{ .Params.venue_label | default (.Params.publication_short | markdownify | plainify) }}</span>{{ with .Params.recognition }}{{ $class := "recognition" }}{{ if eq $paper.Params.recognition_kind "award" }}{{ $class = "recognition recognition-award" }}{{ end }}{{ if $paper.Params.recognition_url }}<a class="{{ $class }}" href="{{ $paper.Params.recognition_url }}">{{ . }}</a>{{ else }}<span class="{{ $class }}">{{ . }}</span>{{ end }}{{ end }}</div>
       <h1 class="pub-title">{{ .Title }}</h1>
       <p class="authors">{{ with .Params.authors_display }}{{ . | markdownify }}{{ else }}{{ range $index, $name := .Params.authors }}{{ if $index }}, {{ end }}{{ partial "homepage/author.html" $name }}{{ if and $paper.Params.equal_contribution (lt $index 2) }}<sup>*</sup>{{ end }}{{ end }}{{ with .Params.authors_including }} (including {{ range $index, $name := . }}{{ if $index }}, {{ end }}{{ partial "homepage/author.html" $name }}{{ end }}){{ end }}{{ end }}</p>

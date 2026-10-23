@@ -75,27 +75,10 @@
       <p class="archive-link"><a href="{{ "publication/" | relURL }}">Browse the publication archive <span aria-hidden="true">↗</span></a></p>
     </section>
 
-    {{ with site.Data.homepage.code }}
+    {{ with where site.RegularPages "Section" "code" }}
     <section id="code" class="section code-section" aria-labelledby="code-title">
       <div class="section-heading"><h2 id="code-title">Open source</h2><a class="section-link" href="https://github.com/suniique">GitHub <span aria-hidden="true">↗</span></a></div>
-      {{ range . }}
-      {{ $visual := resources.Get .image }}
-      {{ if not $visual }}{{ errorf "Missing homepage visual for %s" .title }}{{ end }}
-      <article class="paper" aria-labelledby="code-{{ .id }}">
-        <div class="paper-media">
-          <a class="paper-visual" href="{{ .url }}" aria-label="{{ .title }} — code repository">
-            <img src="{{ $visual.RelPermalink }}" alt="{{ .alt }}" width="760" height="428" loading="lazy" decoding="async" {{ with .animation }}{{ with resources.Get . }}data-motion="{{ .RelPermalink }}"{{ end }}{{ end }}>
-          </a>
-        </div>
-        <div class="paper-content">
-          <div class="paper-meta"><span class="venue">{{ .label }}</span></div>
-          <h4 id="code-{{ .id }}"><a href="{{ .url }}">{{ .title }}</a></h4>
-          <p class="authors">{{ range $index, $name := .authors }}{{ if $index }}, {{ end }}{{ partial "homepage/author.html" $name }}{{ end }}</p>
-          <p class="paper-summary">{{ .summary | markdownify }}</p>
-          <div class="paper-links">{{ range .links }}{{ partial "homepage/paper-link.html" (dict "paper" site.Home "url" .url "label" .name) }}{{ end }}</div>
-        </div>
-      </article>
-      {{ end }}
+      {{ range . }}{{ partial "homepage/publication.html" . }}{{ end }}
     </section>
     {{ end }}
 

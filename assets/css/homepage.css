@@ -1186,6 +1186,28 @@ a.recognition-award:hover {
   line-height:1.8;
   color:var(--ink);
 }
+.pub-body img {
+  width:100%;
+  height:auto;
+  margin:8px 0;
+  border:1px solid var(--line);
+  border-radius:7px;
+}
+/* Two images in one paragraph sit side by side; the next paragraph is their caption. */
+.pub-body p:has(> img + img) {
+  display:flex;
+  gap:12px;
+  margin-bottom:0;
+}
+.pub-body p:has(> img + img) img {
+  min-width:0;
+  flex:1;
+}
+.pub-body p:has(> img + img) + p {
+  font-size:13px;
+  color:var(--muted);
+  text-align:center;
+}
 .pub-bibtex {
   margin:0;
   padding:16px 18px;
