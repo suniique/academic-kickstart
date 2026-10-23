@@ -1,5 +1,5 @@
 ---
-title: "AssembleNIST: One Policy for All NIST Board Assemblies"
+title: "AssembleNIST: Assembly Policy Learning in MuJoCo"
 authors:
 - Tao Sun
 date: "2026-10-21T00:00:00Z"
